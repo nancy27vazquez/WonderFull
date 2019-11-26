@@ -6,7 +6,7 @@ const userSchema = new Schema(
     username: {
       type: String,
       required: true,
-      unique: true
+      unique: "Username already taken"
     },
     email: {
       type: String,
@@ -48,15 +48,3 @@ const userSchema = new Schema(
 );
 
 module.exports = model("User", userSchema);
-
-/* NEEDED 
-username
-email
-password
-profile pic
-country
-permissions???
-favorites
-next travel
-liked tags
-*/

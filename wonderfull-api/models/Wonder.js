@@ -1,146 +1,107 @@
 const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
-/* 
-name
-creator id
-map location (coordinates)
-country
-state
-type of wonder
-rate
-description
-gallery
-tags
-better at
-months
-schedule
-price and currency
-recommendations
-highlights
-prohibited
-testimonials
-website
-phone
-mail
-*/
-
-
-
-
-
-/* 
-map location (coordinates)
-country
-state
-type of wonder
-rate
-tags
-better at
-months
-schedule
-price and currency
-recommendations
-highlights
-prohibited
-testimonials
-website
-phone
-mail
-*/
 
 const wonderSchema = new Schema(
   {
-    name: {
+    whoRecommends: {
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    },
+    wonderName: {
       type: String,
       required: true,
       unique: true
     },
-    whoRecommends: {
-      type: [Schema.Types.ObjectId],
-      ref: "User"
+    location: {
+      country: String,
+      state: String,
+      required: true
+    },
+    coordinates: {
+      type: [Number],
+      required: true
     },
     images: {
       type: [String],
       minlength: 1,
       required: true
     },
+    category: {
+      type: String,
+      enum: [ "MOUNTAIN", "OCEAN", "URBAN", "EXPLORE" ],
+      required: true
+    },
+    daytime: {
+      type: String,
+      enum: [ "DAY", "NIGHT"],
+      default: "DAY"
+    },
+    bestDay: {
+      type: String,
+      enum: [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
+      required: true
+    },
+    timeOfTheYear: {
+      type: String,
+      enum: [ "JAN-MAR", "APR-JUN", "JUL-SEPT", "OCT-DEC" ],
+      default: "Great all year"
+    },
+    /* BIG QUESTION WITH PRICE & CURRENCY */
+    price: {
+      type: Number,
+      value: Number,
+      default: "Free Entrance"
+    },
+    /* BIG QUESTION WITH PRICE & CURRENCY */
     description: {
       type: String,
       minlength: 50,
       required: true
     },
-
-
-
-    location: {
-      country: {
-        type: String,
-        required: true
-      },
-      city: String,
-      address: String
-    },
     tags: {
       type: [ String ],
       default: ["travel", "nature"]
     },
-    price: {
-      coin: String,
-      value: Number,
-      default: 0.00
-    },
     rate: {
       type: Number,
       required: true,
-    }
-    creator: {
-      /* TA's validation needed */
-      type: Schema.Types.ObjectId,
-      /* User: Who gave the recommendation, Sponsor: paid with sponsor name displayed, Ghost: sponsor paid with false user name */
-      enum: ["user", "sponsor", "ghost"],
-      ref: "User",
-      required: true
-    },
-    schedule: {
-      from: {
-        type: Number,
-        minlength: 0,
-        default: 0
-      }
-      to: {
-        type: Number,
-        maxlength: 24,
-        default: 24
-      }
-    },
-    review: {
-      type: String,
-      /* We need here User ID, User img, the comment and place given rate */ 
     },
     highlights: {
-      /* Example: Better at night, don't forget sunblock, pet friendly */
-      type: [ String],
+      type: String,
+      enum: [
+        "Don't forget sunblock",
+        "Pet friendly",
+        "Long walk",
+        "Climbing equipment needed",
+        "Small luggage bags allowed",
+        "May offer products along the way"
+      ]
       default: "No highlights provided yet"
     },
     prohibitions: {
-      /* Example: No weapons allowed, no kids allowed, no cameras. */
-      type: [ String ],
-      default: "This site has no prohibitions"
-    },
-    category: {
-      /* Urban, explore, nature... */
-      type : [ String ],
-      default: [ "nature" ]
+      type: String,
+      enum: [
+        "No kids allowed",
+        "No cameras allowed",
+        "No pets allowed",
+        "No food allowed"
+      ]
     },
     contact: {
       website: String,
       phone: Number,
       mail: String,
     },
-    betterAt: {
-      /* Better months to visit. Ex: June, July */
-      type: [String],
-      default: "All year"
+    transportation: {
+      type: String,
+      enum: [
+        "TRAIN",
+        "CAR",
+        "AIRPORT",
+        "BOAT",
+        "WALKING ONLY"
+      ],
+      required: true
     },
   },
   { 
@@ -150,20 +111,27 @@ const wonderSchema = new Schema(
 
 module.exports = model("Wonder", wonderSchema);
 
-/*
-VALIDATION TYPES:
-type: String, Number, Boolean
-default: Anything,
-required: true
-unique: true
-enum: array  EXAMPLE: enum: ['white', 'black', 'brown']
-min: number
-max: number
-minlenght: number
-maxlenght: number
-trim: true (adds a trim setter)
-lowercase: true (adds a lowercase setter)
-match: a regex (sets a regex valiator)  EXAMPLE: match: /^[A-Z]{2}$/ 
-validate: object (adds custom validator)
-set: function (adds custom setter)
+/* 
+creator id
+name
+map location (coordinates)
+country
+state
+photo/gallery
+type of wonder
+daytime
+months
+weekday
+price and currency
+description
+website
+phone
+mail
+neartransportation
+rate
+tags
+recommendation
+superhighlights
+notallowed
+testimonials
 */
