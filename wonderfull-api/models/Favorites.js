@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
-const nextTripSchema = new Schema(
+const favoritesSchema = new Schema(
   {
-    nextWonders: {
+    favoriteWonders: {
       type: [Schema.Types.ObjectId],
       ref: "Wonder"
     }
@@ -13,4 +13,4 @@ const nextTripSchema = new Schema(
   }
 );
 
-module.exports = model("NextTrip", nextTripSchema);
+module.exports = model("Favorites", favoritesSchema);

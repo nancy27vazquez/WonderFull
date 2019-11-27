@@ -13,7 +13,11 @@ const wonderSchema = new Schema(
       unique: true
     },
     /* DE MAPBOX BUSCAR */
-    location: {
+    geometry: {
+      type: { type: String },
+      coodinates: []
+    },
+    /*location: {
       country: String,
       state: String,
       required: true
@@ -21,7 +25,7 @@ const wonderSchema = new Schema(
     coordinates: {
       type: [{ Number }],
       required: true
-    },
+    },*/
     /*MAPBOX */
     images: {
       type: [String],
@@ -56,7 +60,6 @@ const wonderSchema = new Schema(
       enum: ["JAN-MAR", "APR-JUN", "JUL-SEPT", "OCT-DEC"],
       default: "Great all year"
     },
-    /* BIG QUESTION WITH PRICE & CURRENCY */
     price: {
       type: Number,
       value: Number
@@ -64,7 +67,6 @@ const wonderSchema = new Schema(
     coin: {
       type: String
     },
-    /* BIG QUESTION WITH PRICE & CURRENCY */
     description: {
       type: String,
       minlength: 50,
@@ -73,7 +75,16 @@ const wonderSchema = new Schema(
     tags: {
       type: [String],
       enum: [],
-      default: ["travel", "nature"]
+      default: [
+        "travel",
+        "nature",
+        "explore",
+        "romantic",
+        "familiar",
+        "landscape",
+        "travel alone",
+        "wild"
+      ]
     },
     rate: {
       type: Number,
@@ -100,6 +111,11 @@ const wonderSchema = new Schema(
         "No pets allowed",
         "No food allowed"
       ]
+    },
+    superHighlight: {
+      type: String,
+      required: true,
+      unique: true
     },
     contact: {
       website: String,

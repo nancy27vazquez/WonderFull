@@ -23,4 +23,4 @@ const reviewSchema = new Schema(
   { timestamps: true }
 );
 
-mongoose.exports = ("Review", reviewSchema);
+module.exports = model("Review", reviewSchema);
