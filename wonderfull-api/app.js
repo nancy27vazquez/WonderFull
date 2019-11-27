@@ -7,9 +7,10 @@ const favicon = require("serve-favicon");
 const mongoose = require("mongoose");
 const logger = require("morgan");
 const path = require("path");
+const cors = require("cors");
 
 mongoose
-  .connect(process.env.DB, { useNewUrlParser: true })
+  .connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
@@ -31,6 +32,11 @@ app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(
+  cors({
+    origin: ["http://localhost:3001"]
+  })
+);
 
 // Express View engine setup
 
@@ -39,7 +45,6 @@ app.use(
     src: path.join(__dirname, "public"),
     dest: path.join(__dirname, "public"),
     sourceMap: true
-    console.log('prueba para borrar git, eliminar después...')
   })
 );
 
@@ -51,11 +56,22 @@ app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
 // default value for title local
 app.locals.title = "Express - Generated with IronGenerator";
 
-const index = require("./routes/index");
 const auth = require("./routes/auth");
 const property = require("./routes/property");
 const reservation = require("./routes/reservation");
-app.use("/", index);
-app.use();
+app.use("/api", auth);
+app.use("/api/property", properties);
+app.use("/api/reservation", reservations);
 
 module.exports = app;
+
+/*
+require librerias
+cors 
+engine
+http
+.env
+mongoose
+llamada a base 
+error handling 
+*/

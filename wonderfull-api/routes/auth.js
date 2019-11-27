@@ -3,8 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const { send } = require("../helpers/mailer");
-
-/* GET home page */
+const jwt = require("jsonwebtoken");
 
 /* LOGIN ROUTE */
 router.post("/login", (req, res, next) => {
@@ -13,9 +12,7 @@ router.post("/login", (req, res, next) => {
     .then(user => {
       const isValid = bcrypt.compareSync(password, user.password);
       if (!isValid)
-        return res
-          .status(401)
-          .json({ error: "Password not matching correctly" });
+        return res.status(401).json({ err: "Password not matching correctly" });
 
       jwt.sign(
         {
@@ -25,13 +22,13 @@ router.post("/login", (req, res, next) => {
         (err, token) => {
           delete user._doc.password;
 
-          if (err) res.status(500).json({ error });
+          if (err) return res.status(500).json({ err });
           res.status(200).json({ user, token });
         }
       );
     })
     .catch(err => {
-      res.status(404).json({ err, msg: "Invalid mail" });
+      res.status(404).json({ err, msg: "Invalid email" });
     });
 });
 
@@ -40,10 +37,10 @@ router.post("/signup", (req, res, next) => {
   const { password } = req.body;
 
   /*VALIDATE PASS LENGTH */
-  if (password.lenght <= 5)
+  if (password.lenght <= 8)
     return res
       .status(500)
-      .json({ error: "Password must be at least 5 characters" });
+      .json({ err: "Password should be at least 8 characters long" });
 
   const salt = bcrypt.genSaltSync(10);
   const hashedPassword = bcrypt.hashSync(password, salt);
@@ -57,6 +54,8 @@ router.post("/signup", (req, res, next) => {
         subject: "Welcome to WonderFull!"
       };
 
+      send(options);
+
       jwt.sign(
         {
           id: user._id
@@ -65,15 +64,16 @@ router.post("/signup", (req, res, next) => {
         (err, token) => {
           delete user._doc.password;
 
-          if (err) res.status(500).json({ error });
+          if (err) res.status(500).json({ err });
           res.status(200).json({ user, token });
         }
       );
     })
-    .catch(error => {
-      res
-        .status(404)
-        .json({ error, msg: "There was an error creating this user" });
+    .catch(err => {
+      res.status(404).json({
+        err,
+        msg: "There was an error creating this user, please try again"
+      });
     });
 });
 
