@@ -12,15 +12,17 @@ const wonderSchema = new Schema(
       required: true,
       unique: true
     },
+    /* DE MAPBOX BUSCAR */
     location: {
       country: String,
       state: String,
       required: true
     },
     coordinates: {
-      type: [Number],
+      type: [{ Number }],
       required: true
     },
+    /*MAPBOX */
     images: {
       type: [String],
       minlength: 1,
@@ -28,29 +30,39 @@ const wonderSchema = new Schema(
     },
     category: {
       type: String,
-      enum: [ "MOUNTAIN", "OCEAN", "URBAN", "EXPLORE" ],
+      enum: ["MOUNTAIN", "OCEAN", "URBAN", "EXPLORE"],
       required: true
     },
     daytime: {
       type: String,
-      enum: [ "DAY", "NIGHT"],
+      enum: ["DAY", "NIGHT"],
       default: "DAY"
     },
     bestDay: {
       type: String,
-      enum: [ "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"],
+      enum: [
+        "MONDAY",
+        "TUESDAY",
+        "WEDNESDAY",
+        "THURSDAY",
+        "FRIDAY",
+        "SATURDAY",
+        "SUNDAY"
+      ],
       required: true
     },
     timeOfTheYear: {
       type: String,
-      enum: [ "JAN-MAR", "APR-JUN", "JUL-SEPT", "OCT-DEC" ],
+      enum: ["JAN-MAR", "APR-JUN", "JUL-SEPT", "OCT-DEC"],
       default: "Great all year"
     },
     /* BIG QUESTION WITH PRICE & CURRENCY */
     price: {
       type: Number,
-      value: Number,
-      default: "Free Entrance"
+      value: Number
+    },
+    coin: {
+      type: String
     },
     /* BIG QUESTION WITH PRICE & CURRENCY */
     description: {
@@ -59,12 +71,14 @@ const wonderSchema = new Schema(
       required: true
     },
     tags: {
-      type: [ String ],
+      type: [String],
+      enum: [],
       default: ["travel", "nature"]
     },
     rate: {
       type: Number,
       required: true,
+      default: 5
     },
     highlights: {
       type: String,
@@ -75,7 +89,7 @@ const wonderSchema = new Schema(
         "Climbing equipment needed",
         "Small luggage bags allowed",
         "May offer products along the way"
-      ]
+      ],
       default: "No highlights provided yet"
     },
     prohibitions: {
@@ -90,22 +104,16 @@ const wonderSchema = new Schema(
     contact: {
       website: String,
       phone: Number,
-      mail: String,
+      mail: String
     },
     transportation: {
       type: String,
-      enum: [
-        "TRAIN",
-        "CAR",
-        "AIRPORT",
-        "BOAT",
-        "WALKING ONLY"
-      ],
+      enum: ["TRAIN", "CAR", "AIRPORT", "BOAT", "WALKING ONLY"],
       required: true
-    },
+    }
   },
-  { 
-    timestamps: true 
+  {
+    timestamps: true
   }
 );
 

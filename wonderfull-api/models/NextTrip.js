@@ -3,10 +3,9 @@ const { Schema, model } = mongoose;
 
 const wonderSchema = new Schema(
   {
-    wonder: {
-      type: Schema.Types.ObjectId,
-      ref: "Wonder",
-      required: true
+    wondersList: {
+      type: [Schema.Types.ObjectId],
+      ref: "Wonder"
     }
   },
   {
@@ -14,4 +13,4 @@ const wonderSchema = new Schema(
   }
 );
 
-modu;
+module.exports= ();
