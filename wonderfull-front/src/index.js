@@ -5,16 +5,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import AppProvider from "./AppContext";
-// Temporary using UiKit//
+import "bootstrap/dist/css/bootstrap.min.css";
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 import "uikit/dist/css/uikit.min.css";
 UIkit.use(Icons);
-
-// Import here Bootstrap //
-import Bootstrap from "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/css/bootstrap.css";
 
 const WithRouterAndProvider = () => (
   <AppProvider>

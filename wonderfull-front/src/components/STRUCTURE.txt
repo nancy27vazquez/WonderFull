@@ -1,0 +1,62 @@
+Only temporary. Erase this document later. 
+
+***REFERENCE FROM DAVID***
+
+Components
+-auth
+ -AuthForm
+ -Login
+ -Signup
+
+-common
+  -Card
+  -Loader
+  -Nav
+
+-create
+  -create
+  -createForm
+
+-feed
+  -home
+
+*** MY COMPONENT STRUCTURE ***
+
+-auth
+  -AuthForm
+  -Login
+  -Signup
+
+-common
+  -Navbar
+  -Loader
+  -CardMinimal
+  -CardHorizontal
+  -CardSimple
+  -CardCategories
+  -SearchBar
+  -Hero
+  -CarouselSImple
+  -rate 
+
+-recommend
+  -RecommendFormStepper
+  -step1 (main info)
+  -step2 (category & rate)
+  -step3 (better at info)
+  -step4 (upload gallery)
+  -step5 (price & transportation & tags)
+  -step6 (highlight & superhighlight & prohibition)
+  -step7 (contact info)
+  -step8 (confirmation)
+
+-userProfile
+  -userInfo
+  -userRecommendations
+  -userTags
+
+-nextTrip
+  -global  
+  -endpoints (start & end)
+  -map
+  -informationDisplayed   

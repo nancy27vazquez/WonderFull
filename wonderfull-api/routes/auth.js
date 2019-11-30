@@ -47,14 +47,14 @@ router.post("/signup", (req, res, next) => {
 
   User.create({ ...req.body, password: hashedPassword })
     .then(user => {
-      const options = {
-        filename: "register",
-        email: user.email,
-        message: "Confirm your email",
-        subject: "Welcome to WonderFull!"
-      };
+      // const options = {
+      //   filename: "register",
+      //   email: user.email,
+      //   message: "Confirm your email",
+      //   subject: "Welcome to WonderFull!"
+      // };
 
-      send(options);
+      // send(options);
 
       jwt.sign(
         {

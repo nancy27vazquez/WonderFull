@@ -1,18 +1,18 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Login from "";
-import Signup from "";
-import Feed from "";
-import Recommendation from "";
-import NextTrip from "";
-import Favorites from "";
-import Profile from "";
+import Login from "../src/components/auth/Login";
+import Signup from "../src/components/auth/Signup";
+import Home from "../src/components/feed/Feed";
+import Recommendation from "../src/components/recommend/RecommendFormStepper";
+import NextTrip from "../src/components/nextTrip/Global";
+import Favorites from "../src/components/favorites/Favorites";
+import Profile from "../src/components/user/Profile";
 // Import above whatever component you may need //
 
 const Router = () => (
   <Switch>
     <Route exact path="/">
-      <h1>Home</h1>
+      <Home />
     </Route>
     <Route exact path="/login">
       <Login />
@@ -21,7 +21,7 @@ const Router = () => (
       <Signup />
     </Route>
     <Route path="/feed">
-      <Feed />
+      <Home />
     </Route>
     <Route path="/recommendation">
       <Recommendation />
