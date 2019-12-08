@@ -27,45 +27,69 @@ const Menu = () => {
   //   });
   // }, []);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">WonderFull</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Discover</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a className="navbar-brand" href="/">
+          WonderFull
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="/discover">
+                Discover
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/recommend">
                 Recommend
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/favorites/">Favorites</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Next Trip</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Visited</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">
-                <img src="https://d3lut3gzcpx87s.cloudfront.net/res/img/UnknownProfile.png" />
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/">Logout</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/favorites">
+                Favorites
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/next-trip">
+                Next trip
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/visited">
+                Visited
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/profile">
+                <img
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1570585586/samples/cloudinary-icon.png"
+                  width="30"
+                />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/login">
+                <img
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1570585586/samples/cloudinary-icon.png"
+                  width="30"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 };

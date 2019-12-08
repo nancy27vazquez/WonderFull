@@ -2,10 +2,13 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div>
-      <p>search bar</p>
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="" />
+      <div class="input-group-append">
+        <span class="input-group-text">$</span>
+      </div>
     </div>
   );
-};
+};                                                                                                                                          
 
 export default SearchBar;
