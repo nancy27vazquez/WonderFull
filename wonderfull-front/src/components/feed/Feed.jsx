@@ -6,6 +6,7 @@ import CardSimple from "../common/CardSimple";
 import CarouselSimple from "../common/CarouselSimple";
 import CardCategories from "../common/CardCategories";
 import CardHorizontal from "../common/CardHorizontal";
+import Footer from "../common/Footer";
 // import { getPlaces } from "../../services/places";
 // import { AppContext } from "../../AppContext";
 // import { useHistory } from "react-router-dom";
@@ -54,6 +55,7 @@ const Home = () => {
         </div>
       </div>
       <CardCategories />
+      <Footer />
     </div>
   );
 };
