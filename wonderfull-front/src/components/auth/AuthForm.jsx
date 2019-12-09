@@ -9,46 +9,48 @@ const AuthForm = ({
   handleChange
 }) => (
   <form className="uk-form-stacked" onSubmit={submit}>
-    <div className="uk-margin">
-      <label className="uk-form-label">Email:</label>
-      <div className="uk-inline">
-        <span className="uk-form-icon" uk-icon="icon: user"></span>
-        <input
-          onChange={handleChange}
-          name="email"
-          value={email}
-          className="uk-input"
-          type="email"
-        />
-      </div>
-    </div>
 
     {action === "signup" ? (
       <div className="uk-margin">
-        <label className="uk-form-label">Username:</label>
         <div className="uk-inline">
           <span className="uk-form-icon" uk-icon="icon: user"></span>
           <input
             onChange={handleChange}
             name="username"
             value={username}
-            className="uk-input"
+            className="uk-input uk-border-rounded auth-input "
             type="text"
+            placeholder="Username"
           />
         </div>
       </div>
     ) : null}
 
+
     <div className="uk-margin">
-      <label className="uk-form-label">Password</label>
+      <div className="uk-inline">
+        <span className="uk-form-icon" uk-icon="icon: mail"></span>
+        <input
+          onChange={handleChange}
+          name="email"
+          value={email}
+          className="uk-input uk-border-rounded auth-input "
+          type="email"
+          placeholder="Email"
+        />
+      </div>
+    </div>
+
+    <div className="uk-margin">
       <div className="uk-inline">
         <span className="uk-form-icon" uk-icon="icon: lock"></span>
         <input
           onChange={handleChange}
           name="password"
           value={password}
-          className="uk-input"
+          className="uk-input uk-border-rounded auth-input "
           type="password"
+          placeholder="password"
         />
       </div>
     </div>

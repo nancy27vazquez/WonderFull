@@ -16,10 +16,20 @@ h2 {
   font-size: 2.5rem !important;
   letter-spacing: 0.3px;
 }
+h3 {
+  font-size: 1.85rem !important;
+}
+h6 {
+  font-weight: lighter !important;
+  font-family: 'Barlow', sans-serif !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.uk-overlay-primary {
+  background: rgba(0, 0, 0, 0.3) !important;
 }
 .uk-text-lead {
   font-weight: lighter;
@@ -27,6 +37,12 @@ code {
 .uk-navbar-container {
   color: #f8f8f8 !important;
   background-color: #222222 !important;
+}
+.uk-button-primary {
+  background-color: #222222 !important;
+}
+.uk-link, a {
+  color: #71BDD9 !important;
 }
 .uk-navbar-nav > li > a {
   text-transform: none !important;
@@ -112,4 +128,30 @@ code {
 .rate-stars img {
   width: 16px;
   margin-right: 5px;
+}
+.footer {
+  background-color:#222222 !important;
+  color: rgba(255,255,255,0.4) !important;
+  font-weight: lighter;
+  padding: 9px auto !important;
+  font-size: 0.8em;
+}
+.footer a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: rgba(255,255,255,0.8) !important;
+}
+.footer a:hover {
+  color: rgba(255,255,255,1) !important;
+  transition: 0.2 ease-in-out;
+}
+.auth-bg {
+  background-image: url(https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?auto=compress) !important;
+}
+.auth-input {
+  background-color: #f5f2ea !important;
+  border: none !important;
+}
+.bg-color-bone {
+  background-color: #FAF7F0 !important;
 }
