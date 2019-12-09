@@ -1,91 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bd-example">
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide"
-        data-ride="carousel"
-      >
-        <ol className="carousel-indicators">
-          <li
-            data-target="#carouselExampleCaptions"
-            data-slide-to="0"
-            className="active"
-          ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb"
-              className="d-block"
-              alt="..."
-            />
-            <div className="carousel-caption">
-              <h2 className="text-light">First slide label</h2>
-              <h1 className="text-light">
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
-              </h1>
-              <button type="button" className="btn btn-outline-primary">
-                Botón
-              </button>
+    <div className="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: false;animation: fade">
+      <ul className="uk-slideshow-items" uk-height-viewport="offset-top: true">
+          <li>
+            <img src="https://images.pexels.com/photos/2286895/pexels-photo-2286895.jpeg?auto=compress&cs=tinysrgb" alt="" uk-cover="" />
+            <div className="uk-position-center uk-position-small uk-text-center">
+              <p className="uk-text-large hero-subtitle" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Stand high above Europe's largest waterfall</p>
+              <h1 className="hero-title" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">The Rhine Falls, amusing Switzerland</h1>
+              <a className="hero-button uk-button uk-margin-medium-top " uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0" href="/login">See more</a>
             </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?auto=compress&cs=tinysrgb"
-              className="d-block"
-              alt="..."
-            />
-            <div className="carousel-caption">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li>
+            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=alberta-amazing-attraction-banff-417074.jpg&fm=jpg" alt="" uk-cover="" />
+            <div className="uk-position-center uk-position-small uk-text-center">
+              <p className="uk-text-large hero-subtitle" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Canada’s first national park and the flagship of the nation’s park system</p>
+              <h1 className="hero-title" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Banff National Park, Canada best wonder</h1>
+              <a className="hero-button uk-button uk-margin-medium-top " uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0" href="/login">See more</a>
             </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://images.pexels.com/photos/2286895/pexels-photo-2286895.jpeg?auto=compress&cs=tinysrgb "
-              className="d-block"
-              alt="..."
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+          </li>
+          <li>
+            <img src="https://images.pexels.com/photos/2619004/pexels-photo-2619004.jpeg?cs=srgb&dl=photo-of-blausee-lake-2619004.jpg&fm=jpg" alt="" uk-cover="" />
+            <div className="uk-position-center uk-position-small uk-text-center">
+              <p className="uk-text-large hero-subtitle" uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Attract visitors to the city lit up in all its winter glory</p>
+              <h1 className="hero-title" uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Lucerne during Advent</h1>
+              <a className="hero-button uk-button uk-margin-medium-top " uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0" href="/login">See more</a>
             </div>
-          </div>
-        </div>
-        <a
-          className="carousel-control-prev"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div>
+          </li>
+      </ul>
+      <a className="uk-position-center-left uk-position-small uk-light" href="#" uk-slidenav-previous="" uk-slideshow-item="previous" ></a>
+      <a className="uk-position-center-right uk-position-small uk-light" href="#" uk-slidenav-next="" uk-slideshow-item="next" ></a>
     </div>
+
+
   );
 };
 
 export default Hero;
+

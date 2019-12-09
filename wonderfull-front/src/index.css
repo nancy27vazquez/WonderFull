@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600,800|Playfair+Display:400,700,900&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Barlow', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAF7F0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif !important;
 }
 
 code {
@@ -12,6 +17,36 @@ code {
     monospace;
 }
 
-.test {
-  color: red;
+.uk-navbar-nav > li > a {
+  text-transform: none !important;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  max-width: 80%;
+  margin: 0 auto;
+  color: #F8F8F8;
+}
+.hero-subtitle {
+  color: #F8F8F8;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+.hero-button {
+  background-color: transparent;
+  color: #F8F8F8 !important;
+  border: 2px solid #F8F8F8 !important;
+  border-radius: 10px !important;
+  text-shadow: 0px 0px 5px black;
+}
+.hero-button:hover {
+  background-color: #F8F8F8;
+  text-shadow: none;
+  color: #525252 !important;
+  transition: 0.2s ease-in;
 }
