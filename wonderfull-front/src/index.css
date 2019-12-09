@@ -10,15 +10,45 @@ body {
 }
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif !important;
+  font-weight: bold !important;
+}
+h2 {
+  font-size: 2.5rem !important;
+  letter-spacing: 0.3px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.uk-text-lead {
+  font-weight: lighter;
+}
+.uk-navbar-container {
+  color: #f8f8f8 !important;
+  background-color: #222222 !important;
+}
 .uk-navbar-nav > li > a {
   text-transform: none !important;
+  color: #F8F8F8 !important;
+  opacity: 0.6;
+}
+.uk-button-default {
+  border-radius: 10px !important;
+}
+
+.uk-navbar-nav > li > a:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.uk-logo {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: bolder !important;
+  font-size: 2rem !important;
+  color: #F8F8F8 !important;
+}
+.uk-border-rounded {
+  border-radius: 10px !important;
 }
 
 .hero-title {
@@ -40,7 +70,7 @@ code {
 .hero-button {
   background-color: transparent;
   color: #F8F8F8 !important;
-  border: 2px solid #F8F8F8 !important;
+  border: 1px solid #F8F8F8 !important;
   border-radius: 10px !important;
   text-shadow: 0px 0px 5px black;
 }
@@ -49,4 +79,37 @@ code {
   text-shadow: none;
   color: #525252 !important;
   transition: 0.2s ease-in;
+}
+
+.search-home{
+  border: 3px solid red;
+  margin-top: calc(0vh - 9rem) !important;
+  background-color: #ffffff !important;
+  border-radius: 10px;
+  border: none !important;
+  width: 50% !important;
+  font-size: 1.25rem;
+  padding: 20px 40px;
+  padding-right: 40px ;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.xl-padding-large {
+  padding-left: 2em !important;
+}
+.xr-padding-large {
+  padding-right: 2em !important;
+}
+
+.rate-stars {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.rate-stars img {
+  width: 16px;
+  margin-right: 5px;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: false;animation: fade">
+    <div className="uk-position-relative uk-visible-toggle" tabIndex="-1" uk-slideshow="ratio: false;animation: fade">
       <ul className="uk-slideshow-items" uk-height-viewport="offset-top: true">
           <li>
             <img src="https://images.pexels.com/photos/2286895/pexels-photo-2286895.jpeg?auto=compress&cs=tinysrgb" alt="" uk-cover="" />

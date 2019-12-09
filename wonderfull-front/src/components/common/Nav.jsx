@@ -22,7 +22,7 @@ const Menu = () => {
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <nav className="uk-navbar-container uk-flex" uk-navbar>
         <div className="uk-navbar-left">
-         <a class="uk-navbar-item uk-logo" href="/">WonderFull</a>
+         <a className="uk-navbar-item uk-logo" href="/">WonderFull</a>
         </div>
 
         <div className="uk-navbar-right">
