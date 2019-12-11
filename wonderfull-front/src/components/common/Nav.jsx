@@ -31,7 +31,6 @@ const Menu = () => {
                 <li><a href="/recommend">Recommend</a></li>
                 <li><a href="/favorites">Favorites</a></li>
                 <li><a href="/next-trip">Next trip</a></li>
-                <li><a href="/visited">Visited</a></li>
                 <li>
                   <a href="/profile">
                     <img src="https://res.cloudinary.com/dr95kad7s/image/upload/v1570585586/samples/cloudinary-icon.png" width="30"/>
