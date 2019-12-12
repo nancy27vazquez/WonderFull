@@ -21,7 +21,7 @@ const Signup = () => {
         localStorage.setItem("user", JSON.stringify(user));
         localStorage.setItem("token", token);
         setUser(user);
-        push("/home");
+        push("/");
         UIkit.notification({
           message: `<span uk-icon='check'></span> cuenta creada con éxito`,
           pos: "top-right",
