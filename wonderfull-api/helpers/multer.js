@@ -10,8 +10,8 @@ cloudinary.config({
 
 const storage = cloudinaryStorage({
   cloudinary,
-  folder: "WonderFull",
-  allowedFormats: ["jpg", "jpeg", "png", "pdf"],
+  folder: "ironbnb",
+  allowedFormats: ["jpg", "png", "jpeg", "pdf"],
   filename: function(req, file, cb) {
     cb(null, file.originalname);
   }
