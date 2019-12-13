@@ -1,13 +1,6 @@
 import React from "react";
 
 const MapRoute = () => {
-  /*mapboxgl.accessToken =
-    "pk.eyJ1IjoibmV2YWRnIiwiYSI6ImNrMThrNGZzaTBoaGozcHJ2Z2Rubmp5czQifQ.zhOhtaww8YUX_OnbMakjhA";
-  var map = new mapboxgl.Map({
-    container: "map",
-    style: "mapbox://styles/mapbox/streets-v11"
-  });*/
-
   return (
     <div className="uk-text-center" uk-grid>
       <div>
