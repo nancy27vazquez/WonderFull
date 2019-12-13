@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "dev": "DEBUG=wonderfull-api:* nodemon ./bin/www",
     "dev-windows": "nodemon ./bin/www",
-    "deploy": "cd.. && git subtree push --prefix wonderfull-api heroku master"
+    "deploy": "cd .. && git subtree push --prefix wonderfull-api heroku master"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
