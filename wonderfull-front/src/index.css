@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600,800|Playfair+Display:400,700,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Barlow:200,400,600,800|Playfair+Display:400,700,900&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Barlow', sans-serif !important;
+  font-family: "Barlow", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FAF7F0;
+  background-color: #faf7f0;
 }
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif !important;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif !important;
   font-weight: bold !important;
 }
 h2 {
@@ -21,7 +23,7 @@ h3 {
 }
 h6 {
   font-weight: lighter !important;
-  font-family: 'Barlow', sans-serif !important;
+  font-family: "Barlow", sans-serif !important;
 }
 
 code {
@@ -44,12 +46,13 @@ code {
 .uk-button-primary {
   background-color: #222222 !important;
 }
-.uk-link, a {
-  color: #71BDD9 !important;
+.uk-link,
+a {
+  color: #71bdd9 !important;
 }
 .uk-navbar-nav > li > a {
   text-transform: none !important;
-  color: #F8F8F8 !important;
+  color: #f8f8f8 !important;
   opacity: 0.6;
 }
 .uk-button-default {
@@ -61,10 +64,10 @@ code {
   transition: 0.3s ease-in-out;
 }
 .uk-logo {
-  font-family: 'Playfair Display', serif !important;
+  font-family: "Playfair Display", serif !important;
   font-weight: bolder !important;
   font-size: 2rem !important;
-  color: #F8F8F8 !important;
+  color: #f8f8f8 !important;
 }
 .uk-border-rounded {
   border-radius: 10px !important;
@@ -77,30 +80,30 @@ code {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   max-width: 80%;
   margin: 0 auto;
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 .hero-subtitle {
-  color: #F8F8F8;
-  font-family: 'Barlow', sans-serif;
+  color: #f8f8f8;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
   font-weight: 600;
 }
 .hero-button {
   background-color: transparent;
-  color: #F8F8F8 !important;
-  border: 1px solid #F8F8F8 !important;
+  color: #f8f8f8 !important;
+  border: 1px solid #f8f8f8 !important;
   border-radius: 10px !important;
   text-shadow: 0px 0px 5px black;
 }
 .hero-button:hover {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   text-shadow: none;
   color: #525252 !important;
   transition: 0.2s ease-in;
 }
 
-.search-home{
+.search-home {
   border: 3px solid red;
   margin-top: calc(0vh - 9rem) !important;
   background-color: #ffffff !important;
@@ -109,7 +112,7 @@ code {
   width: 50% !important;
   font-size: 1.25rem;
   padding: 20px 40px;
-  padding-right: 40px ;
+  padding-right: 40px;
   margin-bottom: 1.5rem !important;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
@@ -133,8 +136,8 @@ code {
   margin-right: 5px;
 }
 .footer {
-  background-color:#222222 !important;
-  color: rgba(255,255,255,0.4) !important;
+  background-color: #222222 !important;
+  color: rgba(255, 255, 255, 0.4) !important;
   font-weight: lighter;
   padding: 9px auto !important;
   font-size: 0.8em;
@@ -142,10 +145,10 @@ code {
 .footer a {
   font-weight: 400;
   text-decoration: underline;
-  color: rgba(255,255,255,0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 .footer a:hover {
-  color: rgba(255,255,255,1) !important;
+  color: rgba(255, 255, 255, 1) !important;
   transition: 0.2 ease-in-out;
 }
 .auth-bg {
@@ -156,9 +159,31 @@ code {
   border: none !important;
 }
 .bg-color-bone {
-  background-color: #FAF7F0 !important;
+  background-color: #faf7f0 !important;
 }
 
 .bg-next-trip {
   background-image: url(https://images.pexels.com/photos/714258/pexels-photo-714258.jpeg?auto=compress) !important;
-} 
+}
+.better-time {
+  color: white;
+  background-color: #222222;
+  padding: 7px 10px;
+  border-radius: 40px;
+  width: 20%;
+  margin: 10px auto;
+  font-size: 1.5em;
+}
+.transportation li {
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: column;
+  background-color: purple;
+  margin: 10px;
+  width: 20px;
+}
+.transportation li img {
+  width: 20px;
+  height: 20px;
+}
