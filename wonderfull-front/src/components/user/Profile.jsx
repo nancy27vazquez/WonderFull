@@ -1,9 +1,13 @@
 import React from "react";
+import Menu from "../common/Nav";
+import Footer from "../common/Footer";
 
 const Profile = () => {
   return (
     <div>
-      <p>profile</p>
+      <Menu />
+      <p>Profile</p>
+      <Footer />
     </div>
   );
 };
