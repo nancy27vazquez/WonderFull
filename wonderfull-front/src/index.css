@@ -158,6 +158,10 @@ a {
   background-color: #f5f2ea !important;
   border: none !important;
 }
+.generic-input {
+  background-color: #eceae4 !important;
+  border: none !important;
+}
 .bg-color-bone {
   background-color: #faf7f0 !important;
 }
