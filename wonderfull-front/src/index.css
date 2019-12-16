@@ -72,7 +72,9 @@ a {
 .uk-border-rounded {
   border-radius: 10px !important;
 }
-
+.uk-height-small {
+  height: 250px !important;
+}
 .hero-title {
   text-transform: uppercase;
   font-size: 5em;
@@ -162,6 +164,10 @@ a {
   background-color: #eceae4 !important;
   border: none !important;
 }
+.generic-input-textarea  {
+  line-height: auto !important;
+  max-width: 100%;
+}
 .bg-color-bone {
   background-color: #faf7f0 !important;
 }
@@ -190,4 +196,75 @@ a {
 .transportation li img {
   width: 20px;
   height: 20px;
+}
+
+.form-icons-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fffefd;
+  border-radius: 10px;
+  height: 140px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+.form-text-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fffefd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+.form-icons-checkbox:hover, .form-text-checkbox:hover  {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.category1 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/mountain_kuzeqc.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.category2 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/beach_bjmj6g.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.category3 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/explore_j2bqar.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.category4 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456234/WonderFull/urban_umivqq.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.betterAtDay {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576460672/WonderFull/day_ryb7mj.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.betterAtNight {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576460673/WonderFull/night_hk5qyi.png);
+  background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.fa {
+  font-size: 2.2em !important;
+}
+.checked {
+  color: #f4c534;
 }

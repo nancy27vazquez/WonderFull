@@ -28,7 +28,7 @@ const Step2 = () => {
         <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
           <div class=" uk-margin-auto ">
             <h2 className="uk-margin-remove-bottom">Type of wonder</h2>
-            <p className="uk-text-lead uk-margin-remove-top uk-margin-large-bottom">The category that best suits with wonder</p>
+            <p className="uk-text-lead uk-margin-remove-top uk-margin-large-bottom">Choose the categorie that best suits with it</p>
 
             <RecommendForm 
               action="Next"
