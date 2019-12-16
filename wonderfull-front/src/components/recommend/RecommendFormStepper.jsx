@@ -35,7 +35,6 @@ const RecommendFormStepper = () => {
       <Step6 />
       <Step7 />
       <Step8 />
-      <p>holo</p>
       <Footer />
     </div>
   );

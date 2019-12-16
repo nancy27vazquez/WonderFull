@@ -197,7 +197,9 @@ a {
   width: 20px;
   height: 20px;
 }
-
+.form-icon-medium {
+  height: 105px !important;
+}
 .form-icons-checkbox {
   display: flex;
   align-items: center;
@@ -205,7 +207,6 @@ a {
   background-color: #fffefd;
   border-radius: 10px;
   height: 140px;
-  padding: 10px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
   flex-direction: column;
   padding: 20px;
@@ -217,10 +218,9 @@ a {
   justify-content: flex-end;
   background-color: #fffefd;
   border-radius: 10px;
-  padding: 10px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
   flex-direction: column;
-  padding: 20px;
+  padding: 10px 20px;
   transition: 0.3s ease-in-out;
 }
 .form-icons-checkbox:hover, .form-text-checkbox:hover  {
@@ -259,6 +259,42 @@ a {
 .betterAtNight {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576460673/WonderFull/night_hk5qyi.png);
   background-size: 100px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.transport1 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/car_vghg31.png);
+  background-size: 70px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.transport2 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/bus_vz2cyi.png);
+  background-size: 70px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.transport3 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/boat_rttsjg.png);
+  background-size: 70px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.transport4 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/train_rpa0hj.png);
+  background-size: 70px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.transport5 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/airplane_ehrvd5.png);
+  background-size: 70px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.transport6 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/walking_twt1ue.png);
+  background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
 }  

@@ -124,7 +124,7 @@ const wonderSchema = new Schema(
     },
     transportation: {
       type: String,
-      enum: ["TRAIN", "CAR", "AIRPORT", "BOAT", "WALKING ONLY"],
+      enum: ["TRAIN", "CAR", "WALKING ONLY", "BUS"],
       required: true
     }
   },
