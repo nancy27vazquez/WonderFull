@@ -298,9 +298,75 @@ a {
   background-position: center 20px;
   background-repeat: no-repeat;
 }  
+
+
+
+.high1 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/sunblock_kgg74q.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.high2 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/pets_jltgbs.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.high3 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/walk_co083g.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}  
+.high4 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/climbing_fzqb6m.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.high5 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/luggage_nobkxe.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.high6 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/id_bweh1x.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.high7 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/dangerous_sj9ewk.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.high8 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/comfortable_gtyc7y.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.high9 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/winter_wyahp8.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+} 
+.high10 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/rainy_xor1qo.png);
+  background-size: 55px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}     
 .fa {
   font-size: 2.2em !important;
 }
 .checked {
   color: #f4c534;
+}
+.width-xlarge {
+  max-width: 900px;
 }

@@ -125,8 +125,56 @@ const RecommendForm = ({
 
 
 {/* Step 6 inputs MOVE LATER  */}
+<div className="uk-margin">
+  <div className="uk-inline uk-width-1-1 uk-flex uk-justify-center">
+    <div class="uk-grid-small width-xlarge uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high1"><input id="high1" type="checkbox" name="highlights" className="uk-hidden"/>Sunblock needed</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high2"><input id="high2" type="checkbox" name="highlights" className="uk-hidden"/>Pet friendly</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high3"><input id="high3" type="checkbox" name="highlights" className="uk-hidden"/>Long walk</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high4"><input id="high4" type="checkbox" name="highlights" className="uk-hidden"/>Climbing equipment</label>
+      </div> 
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high5"><input id="high5" type="checkbox" name="highlights" className="uk-hidden"/>Small luggage</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high6"><input id="high6" type="checkbox" name="highlights" className="uk-hidden"/>ID needed</label>
+      </div> 
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high7"><input id="high7" type="checkbox" name="highlights" className="uk-hidden"/>Dangerous at night</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high8"><input id="high8" type="checkbox" name="highlights" className="uk-hidden"/>Comfortable clothes</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high9"><input id="high9" type="checkbox" name="highlights" className="uk-hidden"/>Winter clothes</label>
+      </div>
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high10"><input id="high10" type="checkbox" name="highlights" className="uk-hidden"/>Rainy place</label>
+      </div>        
+    </div>
+  </div>
+</div>
 
-          
+<div className="uk-margin">
+  <div className="uk-inline uk-width-1-1">
+  <p className="uk-text-lead uk-margin-medium-bottom">Prohibitions </p>
+    <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+      <div>
+        <label className="form-icons-checkbox form-icon-medium high1"><input id="high1" type="checkbox" name="highlights" className="uk-hidden"/>Sunblock needed</label>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+  
 {/* Step 6 inputs MOVE LATER  */}
 
 

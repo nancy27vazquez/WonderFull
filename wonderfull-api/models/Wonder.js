@@ -94,12 +94,16 @@ const wonderSchema = new Schema(
     highlights: {
       type: String,
       enum: [
-        "Don't forget sunblock",
+        "Sunblock needed",
         "Pet friendly",
         "Long walk",
         "Climbing equipment needed",
-        "Small luggage bags allowed",
-        "May offer products along the way"
+        "Small luggage allowed",
+        "ID needed",
+        "Dangerous at night",
+        "Comfortable clothes needed",
+        "Winter clothes needed",
+        "Rainy place",
       ],
       default: "No highlights provided yet"
     },
