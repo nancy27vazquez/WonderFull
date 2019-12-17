@@ -9,7 +9,7 @@ const ChosenPlaces = () => {
           className="uk-position-relative uk-visible-toggle uk-light"
           tabindex="-1"
         >
-          <ul className="uk-slider-items uk-child-width-1-4@s uk-grid">
+          <ul className="uk-slider-items uk-child-width-1-4@s uk-grid uk-grid-small ">
             <li>
               <CardSelectedPlaces />
             </li>

@@ -3,8 +3,8 @@ import ChosenPlaces from "../nextTrip/ChosenPlaces";
 
 const TripInfo = () => {
   return (
-    <div className="uk-text-center uk-margin-large" uk-grid>
-      <div className="uk-margin-large-bottom">
+    <div>
+      <div className="uk-margin-large">
         <h2>Better time to go:</h2>
         <p className="better-time uk-margin">
           <img
@@ -18,18 +18,43 @@ const TripInfo = () => {
         </p>
       </div>
       <ChosenPlaces />
-      <div className="uk-margin-large-bottom">
-        <h2>Take in count</h2>
-        <div className="uk-child-width-expand@s" uk-grid>
-          <div className="uk-child-width-expand@s" uk-grid>
-            <div>
-              <h4>Divider</h4>
-              <ul className="uk-list uk-list-large uk-list-divider">
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-              </ul>
-            </div>
+      <div className="uk-margin-medium">
+        <h2 className="uk-margin-remove-bottom">
+          Our travelers best advices for your trip
+        </h2>
+        <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">
+          Take in count former travelers experiences in your selected travel
+          route
+        </p>
+      </div>
+
+      <div
+        class="uk-grid-small uk-margin uk-grid-row-large uk-child-width-1-4@s uk-text-center uk-flex uk-flex-center"
+        uk-grid
+      >
+        <span className="high1 form-icons-checkbox form-icon-medium">
+          Sunblock needed
+        </span>
+        <span className="high1 form-icons-checkbox form-icon-medium">
+          Sunblock needed
+        </span>
+        <span className="high1 form-icons-checkbox form-icon-medium">
+          Sunblock needed
+        </span>
+        <span className="high1 form-icons-checkbox form-icon-medium">
+          Sunblock needed
+        </span>
+      </div>
+
+      <div className="uk-flex uk-flex-center uk-margin-medium-bottom uk-child-width-1-2 uk-width-large">
+        <div className="uk-margin">
+          <div className="uk-inline uk-width-1-1 uk-margin-large">
+            <h4>asdasdasdasd</h4>
+            <ul className="uk-list uk-list-large uk-list-divider">
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
           </div>
         </div>
       </div>

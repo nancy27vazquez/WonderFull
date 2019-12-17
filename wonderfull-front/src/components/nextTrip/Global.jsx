@@ -11,10 +11,22 @@ const Global = () => {
       <Menu />
       <Endpoints />
       <MapRoute />
-      <TripInfo />
+      <div className="uk-grid uk-flex uk-width-large">
+        <TripInfo />
+      </div>
       <Footer />
     </div>
   );
 };
 
 export default Global;
+
+/*
+trip average rate
+trip average price
+
+superhighlight
+recommendations
+prohibitions
+
+*/

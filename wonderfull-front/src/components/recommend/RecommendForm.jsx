@@ -28,7 +28,6 @@ UIkit.upload('.js-upload', {
 
     loadStart: function (e) {
         console.log('loadStart', arguments);
-
         bar.removeAttribute('hidden');
         bar.max = e.total;
         bar.value = e.loaded;
@@ -70,7 +69,7 @@ const RecommendForm = ({
 
    {/* Step 1 default inputs */}
     
-   {/*
+   
     <div className="uk-margin">
       <div className="uk-inline uk-width-1-1">
         <span className="uk-form-icon" uk-icon="icon: user"></span>
@@ -128,31 +127,6 @@ const RecommendForm = ({
 
 {/* MOVE LATER  */}
  
-<div className="uk-margin uk-grid uk-grid-small">
-  <div className="uk-flex uk-flex-between uk-margin-medium-bottom uk-child-width-1-2 uk-flex-middle"> 
-    <div className="uk-margin-small-right">
-      <div className="uk-inline uk-width-1-1">
-
-        <CardMinimal />
-
-      </div>
-    </div>
-
-    <div>
-      <div className="uk-inline uk-width-1-1">
-      <img
-          src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/luggage_nobkxe.png"
-          width="90"
-        />
-        <h2 className="uk-margin-small-bottom">Your Wonder is ready!</h2>
-        <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">
-          Now more travelers can discover this brand new place
-        </p>
-        <button className="uk-button uk-button-primary uk-border-rounded uk-margin-large-bottom" type="submit">See ful detail</button>
-      </div>
-    </div>
-  </div>
-</div>
 {/* MOVE LATER  */}
 
 
@@ -183,11 +157,11 @@ const RecommendForm = ({
         <div className="uk-inline uk-width-1-1">
         <p className="uk-text-lead uk-margin-small-bottom">Rate the full experience for future travelers</p>
           <div className="uk-flex uk-align-center uk-grid-small uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-width-medium" uk-grid="">
-            <span className="fa fa-star checked"></span>
-            <span className="fa fa-star checked"></span>
-            <span className="fa fa-star checked"></span>
-            <span className="fa fa-star"></span>
-            <span className="fa fa-star"></span>
+            <span className="fa fa-big fa-star checked"></span>
+            <span className="fa fa-big fa-star checked"></span>
+            <span className="fa fa-big fa-star checked"></span>
+            <span className="fa fa-big fa-star"></span>
+            <span className="fa fa-big fa-star"></span>
           </div>
         </div>
       </div>
@@ -490,7 +464,31 @@ const RecommendForm = ({
     {/* Step 8 inputs */} 
     {action === "step7" ? (
     <div> 
-    
+      <div className="uk-margin uk-grid uk-grid-small">
+        <div className="uk-flex uk-flex-between uk-margin-medium-bottom uk-child-width-1-2 uk-flex-middle"> 
+          <div className="uk-margin-small-right">
+            <div className="uk-inline uk-width-1-1">
+
+              <CardMinimal />
+
+            </div>
+          </div>
+
+          <div>
+            <div className="uk-inline uk-width-1-1">
+            <img
+                src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/luggage_nobkxe.png"
+                width="90"
+              />
+              <h2 className="uk-margin-small-bottom">Your Wonder is ready!</h2>
+              <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">
+                Now more travelers can discover this brand new place
+              </p>
+              <button className="uk-button uk-button-primary uk-border-rounded uk-margin-large-bottom" type="submit">See ful detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     ) : null}
 
