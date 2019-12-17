@@ -18,7 +18,7 @@ const generateHTML = (filename, options) => {
 exports.send = options => {
   const html = generateHTML(options.filename, options);
   const mailOptions = {
-    from: "Welcome to WonderFull! <wonderfull@noreply.com>",
+    from: "Welcome to WonderFull! <noreply@wonderfull.com>",
     to: options.email,
     subject: options.subject,
     message: options.message,

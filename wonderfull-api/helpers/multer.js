@@ -1,3 +1,4 @@
+  
 const cloudinary = require("cloudinary");
 const cloudinaryStorage = require("multer-storage-cloudinary");
 const multer = require("multer");
@@ -10,7 +11,7 @@ cloudinary.config({
 
 const storage = cloudinaryStorage({
   cloudinary,
-  folder: "WonderFull",
+  folder: "ironbnb",
   allowedFormats: ["jpg", "png", "jpeg", "pdf"],
   filename: function(req, file, cb) {
     cb(null, file.originalname);

@@ -1,46 +1,41 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
-const bcrypt = require("bcryptjs");
-const { send } = require("../helpers/mailer");
+const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const { send } = require("../helpers/mailer");
 
-/* LOGIN ROUTE */
 router.post("/login", (req, res, next) => {
   const { password, email } = req.body;
   User.findOne({ email })
     .then(user => {
       const isValid = bcrypt.compareSync(password, user.password);
       if (!isValid)
-        return res.status(401).json({ err: "Password not matching correctly" });
+        return res.status(401).json({ error: "Password not matching correctly" });
 
       jwt.sign(
         {
           id: user._id
         },
         process.env.SECRET,
-        (err, token) => {
+        (error, token) => {
           delete user._doc.password;
 
-          if (err) return res.status(500).json({ err });
+          if (error) return res.status(500).json({ error });
           res.status(200).json({ user, token });
         }
       );
     })
-    .catch(err => {
-      res.status(404).json({ err, msg: "Invalid email" });
+    .catch(error => {
+      res.status(404).json({ error, msg: "Invalid email" });
     });
 });
 
-/* SIGNUP ROUTE */
 router.post("/signup", (req, res, next) => {
   const { password } = req.body;
 
-  /*VALIDATE PASS LENGTH */
-  if (password.lenght <= 8)
-    return res
-      .status(500)
-      .json({ err: "Password should be at least 8 characters long" });
+  if (password.length <= 8)
+    return res.status(500).json({ error: "Password should be at least 8 characters long" });
 
   const salt = bcrypt.genSaltSync(10);
   const hashedPassword = bcrypt.hashSync(password, salt);
@@ -61,19 +56,16 @@ router.post("/signup", (req, res, next) => {
           id: user._id
         },
         process.env.SECRET,
-        (err, token) => {
+        (error, token) => {
           delete user._doc.password;
 
-          if (err) res.status(500).json({ err });
+          if (error) return res.status(500).json({ error });
           res.status(200).json({ user, token });
         }
       );
     })
-    .catch(err => {
-      res.status(404).json({
-        err,
-        msg: "There was an error creating this user, please try again"
-      });
+    .catch(error => {
+      res.status(404).json({ error, msg: "There was an error creating this user, please try again" });
     });
 });
 
