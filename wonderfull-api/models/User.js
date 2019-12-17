@@ -19,7 +19,6 @@ const userSchema = new Schema(
     },
     profilepic: {
       type: String,
-      default: "image.jpg"
     },
     userType: {
       type: String,
