@@ -81,10 +81,10 @@ const Step4 = () => {
     });
 
   return (
-    <div class="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
-      <div class="uk-width-1-1">
-        <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-          <div class=" uk-margin-auto ">
+    <div className="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+      <div className="uk-width-1-1">
+        <div className="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+          <div className=" uk-margin-auto ">
             <h2 className="uk-margin-remove-bottom">Eyes to see, heart to feel...</h2>
             <p className="uk-text-lead uk-margin-remove-top uk-margin-large-bottom">Upload the wonder best photos to make others fall in love</p>
 

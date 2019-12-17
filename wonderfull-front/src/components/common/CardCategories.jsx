@@ -8,8 +8,8 @@ const CardCategories = () => {
         <li>
           <a href="#">
             <img src="https://getuikit.com/docs/images/slider1.jpg" alt=""/>
-            <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="uk-overlay uk-position-bottom uk-light">
+            <div className="uk-overlay-primary uk-position-cover"></div>
+            <div className="uk-overlay uk-position-bottom uk-light">
               <div className="uk-position-bottom uk-text-left uk-padding-small">
                 <h3 className="uk-margin-small-bottom">National Sanctuarium</h3>
                 <h6 className="uk-margin-remove-top">Alberta, Canada</h6>
@@ -20,8 +20,8 @@ const CardCategories = () => {
         <li>
         <a href="#">
             <img src="https://getuikit.com/docs/images/slider2.jpg" alt=""/>
-            <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="uk-overlay uk-position-bottom uk-light">
+            <div className="uk-overlay-primary uk-position-cover"></div>
+            <div className="uk-overlay uk-position-bottom uk-light">
               <div className="uk-position-bottom uk-text-left uk-padding-small">
                 <h3 className="uk-margin-small-bottom">Banff National Park</h3>
                 <h6 className="uk-margin-remove-top">Alberta, Canada</h6>
@@ -32,8 +32,8 @@ const CardCategories = () => {
         <li>
           <a href="#">
             <img src="https://getuikit.com/docs/images/slider3.jpg" alt=""/>
-            <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="uk-overlay uk-position-bottom uk-light">
+            <div className="uk-overlay-primary uk-position-cover"></div>
+            <div className="uk-overlay uk-position-bottom uk-light">
               <div className="uk-position-bottom uk-text-left uk-padding-small">
                 <h3 className="uk-margin-small-bottom">Lake Yosemite</h3>
                 <h6 className="uk-margin-remove-top">California, United States</h6>
@@ -44,8 +44,8 @@ const CardCategories = () => {
         <li>
           <a href="#">
             <img src="https://getuikit.com/docs/images/slider4.jpg" alt=""/>
-            <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="uk-overlay uk-position-bottom uk-light">
+            <div className="uk-overlay-primary uk-position-cover"></div>
+            <div className="uk-overlay uk-position-bottom uk-light">
               <div className="uk-position-bottom uk-text-left uk-padding-small">
                 <h3 className="uk-margin-small-bottom">Villa de Cortés</h3>
                 <h6 className="uk-margin-remove-top">Malaga, Spain</h6>

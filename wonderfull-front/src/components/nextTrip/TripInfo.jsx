@@ -20,11 +20,11 @@ const TripInfo = () => {
       <ChosenPlaces />
       <div className="uk-margin-large-bottom">
         <h2>Take in count</h2>
-        <div class="uk-child-width-expand@s" uk-grid>
-          <div class="uk-child-width-expand@s" uk-grid>
+        <div className="uk-child-width-expand@s" uk-grid>
+          <div className="uk-child-width-expand@s" uk-grid>
             <div>
               <h4>Divider</h4>
-              <ul class="uk-list uk-list-large uk-list-divider">
+              <ul className="uk-list uk-list-large uk-list-divider">
                 <li>List item 1</li>
                 <li>List item 2</li>
                 <li>List item 3</li>
