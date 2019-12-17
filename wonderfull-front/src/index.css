@@ -164,7 +164,7 @@ a {
   background-color: #eceae4 !important;
   border: none !important;
 }
-.generic-input-textarea  {
+.generic-input-textarea {
   line-height: auto !important;
   max-width: 100%;
 }
@@ -207,7 +207,7 @@ a {
   background-color: #fffefd;
   border-radius: 10px;
   height: 140px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.03);
   flex-direction: column;
   padding: 20px;
   transition: 0.3s ease-in-out;
@@ -218,32 +218,33 @@ a {
   justify-content: flex-end;
   background-color: #fffefd;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.03);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.03);
   flex-direction: column;
   padding: 10px 20px;
   transition: 0.3s ease-in-out;
 }
-.form-icons-checkbox:hover, .form-text-checkbox:hover  {
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+.form-icons-checkbox:hover,
+.form-text-checkbox:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .category1 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/mountain_kuzeqc.png);
   background-size: 100px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .category2 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/beach_bjmj6g.png);
   background-size: 100px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .category3 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456235/WonderFull/explore_j2bqar.png);
   background-size: 100px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .category4 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576456234/WonderFull/urban_umivqq.png);
   background-size: 100px;
@@ -255,7 +256,7 @@ a {
   background-size: 100px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .betterAtNight {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576460673/WonderFull/night_hk5qyi.png);
   background-size: 100px;
@@ -267,39 +268,37 @@ a {
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .transport2 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/bus_vz2cyi.png);
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .transport3 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/boat_rttsjg.png);
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .transport4 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/train_rpa0hj.png);
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .transport5 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/airplane_ehrvd5.png);
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .transport6 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576473677/WonderFull/walking_twt1ue.png);
   background-size: 70px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
-
-
+}
 
 .high1 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/sunblock_kgg74q.png);
@@ -318,13 +317,13 @@ a {
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}  
+}
 .high4 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/climbing_fzqb6m.png);
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .high5 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/luggage_nobkxe.png);
   background-size: 55px;
@@ -336,31 +335,55 @@ a {
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .high7 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/dangerous_sj9ewk.png);
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .high8 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/comfortable_gtyc7y.png);
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .high9 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/winter_wyahp8.png);
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-} 
+}
 .high10 {
   background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/rainy_xor1qo.png);
   background-size: 55px;
   background-position: center 20px;
   background-repeat: no-repeat;
-}     
+}
+.prohibit1 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576591978/WonderFull/no-kids_nupujr.png);
+  background-size: 80px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.prohibit2 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576591978/WonderFull/no-camera_owexrf.png);
+  background-size: 80px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.prohibit3 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576591978/WonderFull/no-animals_reotpc.png);
+  background-size: 80px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
+.prohibit4 {
+  background-image: url(https://res.cloudinary.com/dr95kad7s/image/upload/v1576591978/WonderFull/no-food_glmzqi.png);
+  background-size: 80px;
+  background-position: center 20px;
+  background-repeat: no-repeat;
+}
 .fa {
   font-size: 2.2em !important;
 }
@@ -369,4 +392,16 @@ a {
 }
 .width-xlarge {
   max-width: 900px;
+}
+.card-minimal {
+  background-image: url(https://getuikit.com/docs/images/dark.jpg) !important;
+  text-align: left;
+  color: white;
+  padding: 40px 40px;
+}
+.card-badge-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
 }

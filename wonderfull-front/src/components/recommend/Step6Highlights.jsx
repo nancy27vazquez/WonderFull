@@ -1,4 +1,4 @@
-import React, {handleChange} from "react";
+import React, { handleChange } from "react";
 import RecommendForm from "./RecommendForm";
 /*import { AppContext } from "../../AppContext";
 import useForm from "../../hooks/useForm";*/
@@ -12,29 +12,30 @@ const Step6 = () => {
   */
 
   /* Progress var animation */
-  UIkit.util.ready(function () {
-    var bar = document.getElementById('js-progressbar');
-    var animate = setInterval(function () {
-        bar.value += 10;
-        if (bar.value >= bar.max) { 
-            clearInterval(animate);
-        }
+  UIkit.util.ready(function() {
+    var bar = document.getElementById("js-progressbar");
+    var animate = setInterval(function() {
+      bar.value += 10;
+      if (bar.value >= bar.max) {
+        clearInterval(animate);
+      }
     }, 1000);
   });
 
-
   return (
-    <div className="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+    <div
+      className="uk-section uk-flex uk-flex-middle"
+      uk-height-viewport="offset-top: true"
+    >
       <div className="uk-width-1-1">
         <div className="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
           <div className=" uk-margin-auto ">
             <h2 className="uk-margin-remove-bottom">Give your best advice</h2>
-            <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">Advise first time travelers to improve their experience</p>
+            <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">
+              There's always something unique in every WonderFull place
+            </p>
 
-            <RecommendForm 
-              action="Next"
-            />
-            
+            <RecommendForm action="Next" />
           </div>
         </div>
       </div>

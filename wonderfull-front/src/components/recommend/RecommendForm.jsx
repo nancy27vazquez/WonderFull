@@ -1,5 +1,6 @@
 import React from "react";
 import UIkit from "uikit";
+import CardMinimal from "../common/CardMinimal";
 
 {/* STEP 3 UPLOADER SCRIPTS */}
 var bar = document.getElementById('js-progressbar');
@@ -119,16 +120,40 @@ const RecommendForm = ({
         <div className="uk-height-small uk-light uk-margin-small-bottom uk-background-secondary">mapa aqui</div>
       </div>
     </div>
-   
-
-
-
-
-{/* Step 6 inputs MOVE LATER  */}
-
-
   
-{/* Step 6 inputs MOVE LATER  */}
+
+
+
+
+
+{/* MOVE LATER  */}
+ 
+<div className="uk-margin uk-grid uk-grid-small">
+  <div className="uk-flex uk-flex-between uk-margin-medium-bottom uk-child-width-1-2 uk-flex-middle"> 
+    <div className="uk-margin-small-right">
+      <div className="uk-inline uk-width-1-1">
+
+        <CardMinimal />
+
+      </div>
+    </div>
+
+    <div>
+      <div className="uk-inline uk-width-1-1">
+      <img
+          src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576516253/WonderFull/luggage_nobkxe.png"
+          width="90"
+        />
+        <h2 className="uk-margin-small-bottom">Your Wonder is ready!</h2>
+        <p className="uk-text-lead uk-margin-remove-top uk-margin-medium-bottom">
+          Now more travelers can discover this brand new place
+        </p>
+        <button className="uk-button uk-button-primary uk-border-rounded uk-margin-large-bottom" type="submit">See ful detail</button>
+      </div>
+    </div>
+  </div>
+</div>
+{/* MOVE LATER  */}
 
 
 
@@ -339,14 +364,21 @@ const RecommendForm = ({
     {/* Step 6 inputs */} 
     {action === "step5" ? (
     <div> 
-      
-    </div>
-    ) : null}
-
-    {/* Step 7 inputs */} 
-    {action === "step6" ? (
-    <div> 
+      <div className="uk-margin ">
+        <div className="uk-inline uk-margin-medium-bottom uk-width-1-1">
+          <span className="uk-form-icon" uk-icon="icon: star"></span>
+          <input
+            onChange={handleChange}
+            name="Superhighlight"
+            value="{Superhighlight}"
+            className="uk-input uk-border-rounded generic-input"
+            type="text"
+            placeholder="Write a very unique highlight of this place"
+          />
+        </div>
+      </div>
       <div className="uk-margin">
+      <p className="uk-text-lead uk-margin-medium-bottom">Advise first time travelers to improve their experience </p>
         <div className="uk-inline uk-width-1-1 uk-flex uk-justify-center">
           <div className="uk-grid-small width-xlarge uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
             <div>
@@ -384,24 +416,74 @@ const RecommendForm = ({
       </div>
 
       <div className="uk-margin">
-        <div className="uk-inline uk-width-1-1">
+        <div className="uk-inline uk-width-1-1 uk-margin-bottom">
         <p className="uk-text-lead uk-margin-medium-bottom">Prohibitions </p>
           <div className="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
             <div>
-              <label className="form-icons-checkbox form-icon-medium prohibit1"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No kids</label>
+              <label className="form-icons-checkbox prohibit1"><input id="prohibit1" type="checkbox" name="prohibitions" className="uk-hidden"/>No kids</label>
             </div>
             <div>
-              <label className="form-icons-checkbox form-icon-medium prohibit2"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No cameras</label>
+              <label className="form-icons-checkbox  prohibit2"><input id="prohibit2" type="checkbox" name="prohibitions" className="uk-hidden"/>No cameras</label>
             </div>      
             <div>
-              <label className="form-icons-checkbox form-icon-medium prohibit3"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No pets</label>
+              <label className="form-icons-checkbox  prohibit3"><input id="prohibit3" type="checkbox" name="prohibitions" className="uk-hidden"/>No pets</label>
             </div>
             <div>
-              <label className="form-icons-checkbox form-icon-medium prohibit4"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No food</label>
+              <label className="form-icons-checkbox  prohibit4"><input id="prohibit4" type="checkbox" name="prohibitions" className="uk-hidden"/>No food</label>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
+    ) : null}
+
+    {/* Step 7 inputs */} 
+    {action === "step6" ? (
+    <div>
+      <div className="uk-margin">
+        <div className="uk-inline uk-width-1-1">
+          <span className="uk-form-icon" uk-icon="icon: world"></span>
+          <input
+            onChange={handleChange}
+            name="Website"
+            value="{Website}"
+            className="uk-input uk-border-rounded generic-input"
+            type="text"
+            placeholder="Website"
+          />
+        </div>
+      </div>
+
+      <div className="uk-flex uk-flex-between uk-margin-medium-bottom uk-child-width-1-2"> 
+        <div className="uk-margin-small-right">
+          <div className="uk-inline uk-width-1-1">
+            <span className="uk-form-icon" uk-icon="icon: phone"></span>
+            <input
+              onChange={handleChange}
+              name="Phone number"
+              value="{PhoneNumber}"
+              className="uk-input uk-border-rounded generic-input"
+              type="text"
+              placeholder="Phone number"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div className="uk-inline uk-width-1-1">
+            <span className="uk-form-icon" uk-icon="icon: mail"></span>
+            <input
+              onChange={handleChange}
+              name="Mail"
+              value="{Mail}"
+              className="uk-input uk-border-rounded generic-input"
+              type="text"
+              placeholder="Mail"
+            />
+          </div>
+        </div>
+      </div> 
     </div>
     ) : null}
 
