@@ -5,8 +5,8 @@ const CardHorizontal = () => {
     <div>
             <div className="uk-card uk-card-default uk-margin-medium-bottom uk-border-rounded">
                 <div className="uk-card-media-top">
-                <span class="uk-margin-small-right" uk-icon="check"></span>
-            <span class="uk-margin-small-right" uk-icon="heart"></span>
+                <span className="uk-margin-small-right" uk-icon="check"></span>
+            <span className="uk-margin-small-right" uk-icon="heart"></span>
                   <div
               className="uk-position-relative uk-visible-toggle uk-light"
               tabIndex="-1"
@@ -31,13 +31,13 @@ const CardHorizontal = () => {
                 uk-slideshow-item="next"
               ></a>
             </div>
-            <div class="uk-card-badge uk-label">Mountain</div>
+            <div className="uk-card-badge uk-label">Mountain</div>
                 </div>
                 <div className="uk-card-body uk-padding-medium uk-text-left">
                   <div>
-                    <a href="#" class="uk-button uk-button-text">Recommended by <span>Tamara Davis</span></a>
+                    <a href="#" className="uk-button uk-button-text">Recommended by <span>Tamara Davis</span></a>
                     <h3 className="uk-card-title">Yosemite National Park</h3>
-                    <span class="uk-margin-small-right" uk-icon="check"></span>
+                    <span className="uk-margin-small-right" uk-icon="check"></span>
                   </div>
                     <h5>California, United States</h5>
                     <ul className="rate-stars">

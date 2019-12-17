@@ -41,13 +41,13 @@ const Signup = () => {
   return (
     <div>
       <Menu />
-      <div class="auth-bg uk-background-cover uk-section uk-section-muted uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
-        <div class="uk-width-1-1">
-          <div class="uk-container">
-            <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-              <div class="uk-width-1-1@m">
-                <div class="uk-width-large uk-margin-auto uk-card-body uk-box-shadow-large bg-color-bone">
-                  <h3 class="uk-card-title uk-text-center">Signup</h3>
+      <div className="auth-bg uk-background-cover uk-section uk-section-muted uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+        <div className="uk-width-1-1">
+          <div className="uk-container">
+            <div className="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+              <div className="uk-width-1-1@m">
+                <div className="uk-width-large uk-margin-auto uk-card-body uk-box-shadow-large bg-color-bone">
+                  <h3 className="uk-card-title uk-text-center">Signup</h3>
                   <div className="uk-container uk-flex uk-flex-center">
                     <AuthForm
                       submit={handleSubmit}

@@ -69,7 +69,7 @@ const RecommendForm = ({
 
    {/* Step 1 default inputs */}
     
-   {/*
+   
     <div className="uk-margin">
       <div className="uk-inline uk-width-1-1">
         <span className="uk-form-icon" uk-icon="icon: user"></span>
@@ -119,59 +119,12 @@ const RecommendForm = ({
         <div className="uk-height-small uk-light uk-margin-small-bottom uk-background-secondary">mapa aqui</div>
       </div>
     </div>
-   */}
+   
 
 
 
 
 {/* Step 6 inputs MOVE LATER  */}
-<div className="uk-margin">
-  <div className="uk-inline uk-width-1-1 uk-flex uk-justify-center">
-    <div class="uk-grid-small width-xlarge uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high1"><input id="high1" type="checkbox" name="highlights" className="uk-hidden"/>Sunblock needed</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high2"><input id="high2" type="checkbox" name="highlights" className="uk-hidden"/>Pet friendly</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high3"><input id="high3" type="checkbox" name="highlights" className="uk-hidden"/>Long walk</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high4"><input id="high4" type="checkbox" name="highlights" className="uk-hidden"/>Climbing equipment</label>
-      </div> 
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high5"><input id="high5" type="checkbox" name="highlights" className="uk-hidden"/>Small luggage</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high6"><input id="high6" type="checkbox" name="highlights" className="uk-hidden"/>ID needed</label>
-      </div> 
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high7"><input id="high7" type="checkbox" name="highlights" className="uk-hidden"/>Dangerous at night</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high8"><input id="high8" type="checkbox" name="highlights" className="uk-hidden"/>Comfortable clothes</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high9"><input id="high9" type="checkbox" name="highlights" className="uk-hidden"/>Winter clothes</label>
-      </div>
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high10"><input id="high10" type="checkbox" name="highlights" className="uk-hidden"/>Rainy place</label>
-      </div>        
-    </div>
-  </div>
-</div>
-
-<div className="uk-margin">
-  <div className="uk-inline uk-width-1-1">
-  <p className="uk-text-lead uk-margin-medium-bottom">Prohibitions </p>
-    <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
-      <div>
-        <label className="form-icons-checkbox form-icon-medium high1"><input id="high1" type="checkbox" name="highlights" className="uk-hidden"/>Sunblock needed</label>
-      </div>      
-    </div>
-  </div>
-</div>
 
 
   
@@ -184,7 +137,7 @@ const RecommendForm = ({
     <div> 
       <div className="uk-margin">
         <div className="uk-inline uk-width-1-1">
-          <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+          <div className="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
             <div>
               <label className="form-icons-checkbox category1"><input id="category1" type="radio" name="category1" className=""/> Mountain</label>
             </div>
@@ -204,12 +157,12 @@ const RecommendForm = ({
       <div className="uk-margin-large">
         <div className="uk-inline uk-width-1-1">
         <p className="uk-text-lead uk-margin-small-bottom">Rate the full experience for future travelers</p>
-          <div class="uk-flex uk-align-center uk-grid-small uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-width-medium" uk-grid="">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+          <div className="uk-flex uk-align-center uk-grid-small uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-width-medium" uk-grid="">
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star checked"></span>
+            <span className="fa fa-star"></span>
+            <span className="fa fa-star"></span>
           </div>
         </div>
       </div>
@@ -235,7 +188,7 @@ const RecommendForm = ({
     <div> 
       <div className="uk-margin">
         <div className="uk-inline uk-width-1-1">
-          <div class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
+          <div className="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
             <div>
               <label className="form-icons-checkbox betterAtDay"><input id="day" type="radio" name="daytime" className=""/> Daytime</label>
             </div>
@@ -249,7 +202,7 @@ const RecommendForm = ({
       <div className="uk-margin">
         <div className="uk-inline uk-width-1-1">
         <p className="uk-text-lead uk-margin-small-bottom">Ideal time of the year</p>
-          <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+          <div className="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
             <div>
               <label className="form-text-checkbox"><input id="months1" type="radio" name="month" className="uk-hidde"/> Jan - Mar</label>
             </div>
@@ -269,7 +222,7 @@ const RecommendForm = ({
       <div className="uk-margin">
         <div className="uk-inline uk-width-1-1">
         <p className="uk-text-lead uk-margin-small-bottom">Ideal time of the year</p>
-          <div class="uk-grid-small uk-flex-center uk-text-center uk-grid" uk-grid="">
+          <div className="uk-grid-small uk-flex-center uk-text-center uk-grid" uk-grid="">
             <div className="uk-width-expand">
               <label className="form-text-checkbox"><input id="day1" type="radio" name="day" className="uk-hidde"/> Sun</label>
             </div>
@@ -300,15 +253,15 @@ const RecommendForm = ({
     {/* Step 4 inputs */} 
     {action === "step3" ? (
     <div> 
-      <div class="js-upload uk-placeholder uk-text-center">
+      <div className="js-upload uk-placeholder uk-text-center">
         <span uk-icon="icon: cloud-upload"></span>
-        <span class="uk-text-middle">Attach binaries by dropping them here or</span>
+        <span className="uk-text-middle">Attach binaries by dropping them here or</span>
         <div uk-form-custom>
             <input type="file" multiple />
-            <span class="uk-link">selecting one</span>
+            <span className="uk-link">selecting one</span>
         </div>
       </div>
-      <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+      <progress id="js-progressbar" className="uk-progress" value="0" max="100" hidden></progress>
     </div>
     ) : null}
     
@@ -317,7 +270,7 @@ const RecommendForm = ({
     <div> 
       <div className="uk-margin">
         <div className="uk-inline uk-width-1-1">
-          <div class="uk-grid-small uk-child-width-1-6@s uk-flex-center uk-text-center uk-margin-medium-bottom" uk-grid="">
+          <div className="uk-grid-small uk-child-width-1-6@s uk-flex-center uk-text-center uk-margin-medium-bottom" uk-grid="">
             <div className="">
               <label className="form-text-checkbox"><input id="tag1" type="checkbox" name="tags" className="uk-hidden"/> travel</label>
             </div>
@@ -349,7 +302,7 @@ const RecommendForm = ({
       <div className="uk-margin uk-margin-medium-bottom">
         <div className="uk-inline uk-width-1-1">
         <p className="uk-text-lead uk-margin-medium-bottom">How to get there & nearest transportation </p>
-          <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+          <div className="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
             <div>
               <label className="form-icons-checkbox form-icon-medium  transport1"><input id="transport1" type="checkbox" name="transportation" className=""/> Car</label>
             </div>
@@ -393,7 +346,62 @@ const RecommendForm = ({
     {/* Step 7 inputs */} 
     {action === "step6" ? (
     <div> 
-    
+      <div className="uk-margin">
+        <div className="uk-inline uk-width-1-1 uk-flex uk-justify-center">
+          <div className="uk-grid-small width-xlarge uk-child-width-1-5@s uk-flex-center uk-text-center uk-grid uk-margin-bottom" uk-grid="">
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high1"><input id="high1" type="checkbox" name="highlights" className="uk-hidden"/>Sunblock needed</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high2"><input id="high2" type="checkbox" name="highlights" className="uk-hidden"/>Pet friendly</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high3"><input id="high3" type="checkbox" name="highlights" className="uk-hidden"/>Long walk</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high4"><input id="high4" type="checkbox" name="highlights" className="uk-hidden"/>Climbing equipment</label>
+            </div> 
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high5"><input id="high5" type="checkbox" name="highlights" className="uk-hidden"/>Small luggage</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high6"><input id="high6" type="checkbox" name="highlights" className="uk-hidden"/>ID needed</label>
+            </div> 
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high7"><input id="high7" type="checkbox" name="highlights" className="uk-hidden"/>Dangerous at night</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high8"><input id="high8" type="checkbox" name="highlights" className="uk-hidden"/>Comfortable clothes</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high9"><input id="high9" type="checkbox" name="highlights" className="uk-hidden"/>Winter clothes</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium high10"><input id="high10" type="checkbox" name="highlights" className="uk-hidden"/>Rainy place</label>
+            </div>        
+          </div>
+        </div>
+      </div>
+
+      <div className="uk-margin">
+        <div className="uk-inline uk-width-1-1">
+        <p className="uk-text-lead uk-margin-medium-bottom">Prohibitions </p>
+          <div className="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center uk-grid" uk-grid="">
+            <div>
+              <label className="form-icons-checkbox form-icon-medium prohibit1"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No kids</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium prohibit2"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No cameras</label>
+            </div>      
+            <div>
+              <label className="form-icons-checkbox form-icon-medium prohibit3"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No pets</label>
+            </div>
+            <div>
+              <label className="form-icons-checkbox form-icon-medium prohibit4"><input id="high1" type="checkbox" name="prohibitions" className="uk-hidden"/>No food</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     ) : null}
 

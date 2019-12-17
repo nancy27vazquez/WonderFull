@@ -23,10 +23,10 @@ const Step2 = () => {
   });
 
   return (
-    <div class="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
-      <div class="uk-width-1-1">
-        <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-          <div class=" uk-margin-auto ">
+    <div className="uk-section uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+      <div className="uk-width-1-1">
+        <div className="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+          <div className=" uk-margin-auto ">
             <h2 className="uk-margin-remove-bottom">Type of wonder</h2>
             <p className="uk-text-lead uk-margin-remove-top uk-margin-large-bottom">Choose the categorie that best suits with it</p>
 
@@ -34,7 +34,7 @@ const Step2 = () => {
               action="Next"
             />
 
-            <progress id="js-progressbar" class="uk-progress" value="0" max="100"></progress>
+            <progress id="js-progressbar" className="uk-progress" value="0" max="100"></progress>
           </div>
         </div>
       </div>

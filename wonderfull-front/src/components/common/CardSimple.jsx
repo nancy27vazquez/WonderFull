@@ -6,8 +6,8 @@ const CardSimple = () => {
     <div>
       <div className="uk-card uk-card-default uk-margin-small-bottom uk-border-rounded">
         <div className="uk-card-media-top">
-          <span class="uk-margin-small-right" uk-icon="check"></span>
-          <span class="uk-margin-small-right" uk-icon="heart"></span>
+          <span className="uk-margin-small-right" uk-icon="check"></span>
+          <span className="uk-margin-small-right" uk-icon="heart"></span>
           <div
             className="uk-position-relative uk-visible-toggle uk-light"
             tabIndex="-1"
@@ -47,12 +47,12 @@ const CardSimple = () => {
               uk-slideshow-item="next"
             ></a>
           </div>
-          <div class="uk-card-badge uk-label">Mountain</div>
+          <div className="uk-card-badge uk-label">Mountain</div>
         </div>
         <div className="uk-card-body uk-padding-medium uk-text-left">
           <div>
             <h3 className="uk-card-title">Yosemite National Park</h3>
-            <span class="uk-margin-small-right" uk-icon="check"></span>
+            <span className="uk-margin-small-right" uk-icon="check"></span>
           </div>
           <h3>California, United States</h3>
           <Rate />
@@ -61,8 +61,8 @@ const CardSimple = () => {
             eiusmod tempor incididunt.
           </p>
         </div>
-        <div class="uk-card-footer">
-          <a href="#" class="uk-button uk-button-text">
+        <div className="uk-card-footer">
+          <a href="#" className="uk-button uk-button-text">
             Recommended by <span>Tamara Davis</span>
           </a>
         </div>
