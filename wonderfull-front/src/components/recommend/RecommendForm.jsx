@@ -69,7 +69,7 @@ const RecommendForm = ({
 
    {/* Step 1 default inputs */}
     
-   
+   {/*
     <div className="uk-margin">
       <div className="uk-inline uk-width-1-1">
         <span className="uk-form-icon" uk-icon="icon: user"></span>
