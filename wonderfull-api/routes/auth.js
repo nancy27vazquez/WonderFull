@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
-const bcrypt = require("bcrypt");
+const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { send } = require("../helpers/mailer");
 
@@ -9,7 +9,7 @@ router.post("/login", (req, res, next) => {
   const { password, email } = req.body;
   User.findOne({ email })
     .then(user => {
-      const isValid = bcrypt.compareSync(password, user.password);
+      const isValid = bcryptjs.compareSync(password, user.password);
       if (!isValid)
         return res.status(401).json({ error: "Password not matching correctly" });
 
@@ -37,8 +37,8 @@ router.post("/signup", (req, res, next) => {
   if (password.length <= 8)
     return res.status(500).json({ error: "Password should be at least 8 characters long" });
 
-  const salt = bcrypt.genSaltSync(10);
-  const hashedPassword = bcrypt.hashSync(password, salt);
+  const salt = bcryptjs.genSaltSync(10);
+  const hashedPassword = bcryptjs.hashSync(password, salt);
 
   User.create({ ...req.body, password: hashedPassword })
     .then(user => {
