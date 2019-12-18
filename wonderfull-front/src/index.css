@@ -419,3 +419,15 @@ a {
   left: 30px;
   z-index: 1;
 }
+.save-wonder-button {
+  background: rgba(235, 212, 0, 0.733) !important;
+  padding: 15px !important;
+  border-radius: 50% !important;
+  transition: 0.2s ease-in-out;
+}
+.save-wonder-button#tofavorites:hover {
+  background-color: seagreen !important;
+}
+.save-wonder-button#tonexttrip:hover {
+  background-color: purple !important;
+}
