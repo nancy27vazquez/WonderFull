@@ -74,7 +74,8 @@ const wonderSchema = new Schema(
       value: Number
     },
     coin: {
-      type: String
+      type: String,
+      default: "$"
     },
     description: {
       type: String,
@@ -141,8 +142,7 @@ const wonderSchema = new Schema(
     },
     transportation: {
       type: String,
-      enum: ["TRAIN", "CAR", "WALKING ONLY", "BUS"],
-      required: true
+      enum: ["Train", "Car", "Walking only", "Bus", "Boat", "Airplane"]
     }
   },
   {
