@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3001"]
+    origin: ["http://localhost:3000", "http://localhost:3001"]
   })
 );
 
@@ -58,7 +58,7 @@ app.locals.title = "Express - Generated with IronGenerator";
 
 const auth = require("./routes/auth");
 const wonders = require("./routes/wonder");
-app.use("/api", auth);
+app.use("/api/auth", auth);
 app.use("/api/wonder", wonders);
 
 app.use("*", (req, res) => {

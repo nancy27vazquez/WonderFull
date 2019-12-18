@@ -11,7 +11,9 @@ router.post("/login", (req, res, next) => {
     .then(user => {
       const isValid = bcryptjs.compareSync(password, user.password);
       if (!isValid)
-        return res.status(401).json({ error: "Password not matching correctly" });
+        return res
+          .status(401)
+          .json({ error: "Password not matching correctly" });
 
       jwt.sign(
         {
@@ -33,9 +35,12 @@ router.post("/login", (req, res, next) => {
 
 router.post("/signup", (req, res, next) => {
   const { password } = req.body;
+  console.log(req.body);
 
   if (password.length <= 8)
-    return res.status(500).json({ error: "Password should be at least 8 characters long" });
+    return res
+      .status(500)
+      .json({ error: "Password should be at least 8 characters long" });
 
   const salt = bcryptjs.genSaltSync(10);
   const hashedPassword = bcryptjs.hashSync(password, salt);
@@ -65,7 +70,10 @@ router.post("/signup", (req, res, next) => {
       );
     })
     .catch(error => {
-      res.status(404).json({ error, msg: "There was an error creating this user, please try again" });
+      res.status(404).json({
+        error,
+        msg: "There was an error creating this user, please try again"
+      });
     });
 });
 

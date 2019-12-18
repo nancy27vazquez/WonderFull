@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const jwt = require("jsonwebtoken");
 const { Schema, model } = mongoose;
 
 const wonderSchema = new Schema(
@@ -13,9 +14,17 @@ const wonderSchema = new Schema(
       unique: true
     },
     /* DE MAPBOX BUSCAR */
-    geometry: {
-      type: { type: String },
-      coodinates: []
+    location: {
+      type: {
+        type: String,
+        default: "Point"
+      },
+      address: {
+        type: String
+      },
+      coords: {
+        type: [Number]
+      }
     },
     /*location: {
       country: String,
@@ -74,8 +83,7 @@ const wonderSchema = new Schema(
     },
     tags: {
       type: [String],
-      enum: [],
-      default: [
+      enum: [
         "travel",
         "nature",
         "explore",
@@ -84,7 +92,8 @@ const wonderSchema = new Schema(
         "landscape",
         "travel alone",
         "wild"
-      ]
+      ],
+      default: ["travel"]
     },
     rate: {
       type: Number,
@@ -103,7 +112,7 @@ const wonderSchema = new Schema(
         "Dangerous at night",
         "Comfortable clothes needed",
         "Winter clothes needed",
-        "Rainy place",
+        "Rainy place"
       ],
       default: "No highlights provided yet"
     },
@@ -121,10 +130,14 @@ const wonderSchema = new Schema(
       required: true,
       unique: true
     },
-    contact: {
-      website: String,
-      phone: Number,
-      mail: String
+    website: {
+      type: String
+    },
+    phone: {
+      type: Number
+    },
+    mail: {
+      type: String
     },
     transportation: {
       type: String,

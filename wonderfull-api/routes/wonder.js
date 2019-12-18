@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const Wonder = require("../models/Wonder");
 const uploader = require("../helpers/multer");
-const { verifyToken } = require("../helpers/auth");
+/*const { verifyToken } = require("../helpers/auth");*/
 
-router.get("/", verifyToken, (req, res) => {
+router.get("/", (req, res) => {
   Wonder.find()
-    .populate("owner", "username profilepic")
+    .populate("whoRecommends", "username")
     .then(wonders => {
       res.status(200).json({ wonders });
     })
@@ -15,14 +15,14 @@ router.get("/", verifyToken, (req, res) => {
     });
 });
 
-router.post("/", verifyToken, uploader.array("images"), (req, res) => {
-  const { files, user } = req;
+router.post("/", uploader.array("images"), (req, res) => {
+  const { files } = req;
   const images = files.map(file => file.secure_url);
-  Wonder.create({ ...req.body, owner: user._id, images })
+  Wonder.create({ ...req.body, images })
     .then(wonder => {
       Wonder.populate(wonder, {
-        path: "owner",
-        select: "username profilepic"
+        path: "whoRecommends",
+        select: "username"
       });
       res.status(200).json({ wonder });
     })
@@ -31,10 +31,10 @@ router.post("/", verifyToken, uploader.array("images"), (req, res) => {
     });
 });
 
-router.post("/search_one", verifyToken, (req, res) => {
+router.post("/search_one", (req, res) => {
   const { wonder_id } = req.body;
   Wonder.findById(wonder_id)
-    .populate("owner", "username profilepic")
+    .populate("whoRecommends", "username")
     .then(wonder => {
       res.status(200).json({ wonder });
     })
@@ -43,10 +43,10 @@ router.post("/search_one", verifyToken, (req, res) => {
     });
 });
 
-router.patch("/edit_one", verifyToken, (req, res) => {
+router.patch("/edit_one", (req, res) => {
   const { wonder_id } = req.params;
   Wonder.findByIdAndUpdate(wonder_id, { $set: { ...req.body } }, { new: true })
-    .populate("owner", "username profilepic")
+    .populate("whoRecommends", "username")
     .then(wonder => {
       res.status(200).json({ wonder });
     })
@@ -55,7 +55,7 @@ router.patch("/edit_one", verifyToken, (req, res) => {
     });
 });
 
-router.delete("/delete_one", verifyToken, (req, res) => {
+router.delete("/delete_one", (req, res) => {
   const { wonder_id } = req.params;
   Wonder.findByIdAndRemove(wonder_id)
     .then(wonder => {
