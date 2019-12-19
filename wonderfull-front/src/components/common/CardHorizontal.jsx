@@ -18,19 +18,19 @@ const CardHorizontal = () => {
             <ul className="uk-slideshow-items">
               <li>
                 <img
-                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576687198/WonderFull/Yosemite_1_uprusp.jpg"
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576761578/WonderFull/train-passing-773471_1_gibzue.jpg"
                   alt="hello"
                 />
               </li>
               <li>
                 <img
-                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576687198/WonderFull/Yosemite_1_uprusp.jpg"
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576761578/WonderFull/person-walking-on-pathway-2444403_wm02qu.jpg"
                   alt="hello"
                 />
               </li>
               <li>
                 <img
-                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576687198/WonderFull/Yosemite_1_uprusp.jpg"
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576761578/WonderFull/adventure-alps-climb-clouds-267104_vtitko.jpg"
                   alt="hello"
                 />
               </li>
