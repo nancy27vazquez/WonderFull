@@ -26,7 +26,7 @@ const Router = () => (
     <Route path="/recommend">
       <Recommendation />
     </Route>
-    <Route path="/next-trip">
+    <Route path="/next_trip">
       <NextTrip />
     </Route>
     <Route path="/favorites">

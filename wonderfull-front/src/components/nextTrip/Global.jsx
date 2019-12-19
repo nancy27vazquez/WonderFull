@@ -9,11 +9,8 @@ const Global = () => {
   return (
     <div>
       <Menu />
-      <Endpoints />
-      <MapRoute />
-      <div className="uk-grid uk-flex uk-width-large">
-        <TripInfo />
-      </div>
+
+      <TripInfo />
       <Footer />
     </div>
   );

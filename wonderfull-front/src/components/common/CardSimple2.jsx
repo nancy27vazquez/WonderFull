@@ -1,5 +1,5 @@
 import React from "react";
-import Rate from "../common/Rate";
+import Rate from "./Rate";
 import SaveWonderButtons from "./SaveWonderButtons";
 
 const CardSimple = ({
@@ -19,27 +19,27 @@ const CardSimple = ({
             uk-slideshow="true"
           >
             <img
-              src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576687314/WonderFull/banff_3_wwln95.jpg"
+              src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576687198/WonderFull/borabora_1_hbxlkx.jpg"
               className="uk-height-medium"
             />
             <SaveWonderButtons />
-            <div className="card-badge-bottom uk-label">MOUNTAIN</div>
+            <div className="card-badge-bottom uk-label">OCEAN</div>
           </div>
         </div>
         <div className="uk-card-body uk-padding-medium uk-text-left">
           <div>
-            <h3 className="uk-card-title">Yosemite Park</h3>
+            <h3 className="uk-card-title">Bora Bora</h3>
           </div>
-          <h5>California, United States</h5>
+          <h5>Tahiti</h5>
           <Rate />
           <p>
-            Not just a great valley, but a shrine to human foresight, the
-            persistence of life, and the tranquility of the High Sierra.
+            Bora Bora is a Pacific island in the territory of French Polynesia,
+            part of the Society Islands halfway South America and Australia.
           </p>
         </div>
         <div className="uk-card-footer">
           <a href="#" className="uk-button uk-button-text">
-            Recommended by <span>{whoRecommends}</span>
+            Recommended by <span>Patrick Joseph Dunn</span>
           </a>
         </div>
       </div>

@@ -3,6 +3,8 @@ import Menu from "../common/Nav";
 import Hero from "../common/Hero";
 import SearchBar from "../common/SearchBar";
 import CardSimple from "../common/CardSimple";
+import CardSimple1 from "../common/CardSimple1";
+import CardSimple2 from "../common/CardSimple2";
 import CarouselSimple from "../common/CarouselSimple";
 import CardCategories from "../common/CardCategories";
 import CardHorizontal from "../common/CardHorizontal";
@@ -38,10 +40,13 @@ const Home = () => {
           <p className="uk-text-lead uk-margin-remove-top uk-margin-large-bottom">
             Amazing nature you didn’t knew that could be real
           </p>
-          <div className="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match uk-grid-small ">
+          <div
+            className="uk-grid uk-child-width-1-1@s uk-child-width-1-3@m uk-child-width-1-3@l uk-grid-match uk-grid-small "
+            uk-height-match
+          >
             <CardSimple />
-            <CardSimple />
-            <CardSimple />
+            <CardSimple1 />
+            <CardSimple2 />
           </div>
         </div>
       </div>

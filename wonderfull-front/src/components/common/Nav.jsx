@@ -13,7 +13,7 @@ const Menu = () => {
     resetContext();
   };
 
-  // const { user, properties, setPlaces } = useContext(AppContext);
+  // const { user, wonders, setWonders } = useContext(AppContext);
   // const { push } = useHistory();
 
   // useEffect(() => {
@@ -22,12 +22,51 @@ const Menu = () => {
   //   getPlaces().then(res => {
   //     const { places } = res.data;
   //     console.log(places);
-  //     setProperties(places);
+  //     setWonders(places);
   //   });
   // }, []);
 
   return (
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+      <nav className="uk-navbar-container uk-flex" uk-navbar>
+        <div className="uk-navbar-left">
+          <a className="uk-navbar-item uk-logo" href="/">
+            WonderFull
+          </a>
+        </div>
+        <div className="uk-navbar-right">
+          <ul className="uk-navbar-nav uk-flex uk-flex-middle">
+            <li>
+              <a href="/discover">Discover</a>
+            </li>
+            <li>
+              <a href="/recommend">Recommend</a>
+            </li>
+
+            <li>
+              <a href="/next_trip">Next trip</a>
+            </li>
+            <li className="uk-margin-small-right uk-margin-small-left">
+              <img
+                src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576279914/WonderFull/user_kzixa6.svg"
+                width="20"
+              />
+            </li>
+            <li className="uk-margin-small-right uk-margin-small-left">
+              <button onClick={handleLogout} className="no-background">
+                <img
+                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576278992/WonderFull/logout_mnfi4h.svg"
+                  width="20"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    /*
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <nav className="uk-navbar-container uk-flex" uk-navbar>
         <div className="uk-navbar-left">
           <a className="uk-navbar-item uk-logo" href="/">
@@ -47,7 +86,7 @@ const Menu = () => {
                 <a href="/favorites">Favorites</a>
               </li>
               <li>
-                <a href="/next-trip">Next trip</a>
+                <a href="/next_trip">Next trip</a>
               </li>
               <li>
                 <img
@@ -78,7 +117,7 @@ const Menu = () => {
           </div>
         )}
       </nav>
-    </div>
+    </div>*/
   );
 };
 

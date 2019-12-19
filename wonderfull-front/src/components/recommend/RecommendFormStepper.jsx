@@ -10,31 +10,30 @@ import Step8 from "../recommend/Step8Confirmation";
 import Menu from "../common/Nav";
 import Footer from "../common/Footer";
 import UIkit from "uikit";
+import CardMinimal from "../common/CardMinimal";
 
 const RecommendFormStepper = () => {
-
-  UIkit.util.ready(function () {
-    var bar = document.getElementById('js-progressbar');
-    var animate = setInterval(function () {
-        bar.value += 10;
-        if (bar.value >= bar.max) { 
-            clearInterval(animate);
-        }
-    }, 1000);
-  });
-
+  // UIkit.util.ready(function() {
+  //   var bar = document.getElementById("js-progressbar");
+  //   var animate = setInterval(function() {
+  //     bar.value += 10;
+  //     if (bar.value >= bar.max) {
+  //       clearInterval(animate);
+  //     }
+  //   }, 1000);
+  // });
 
   return (
     <div>
       <Menu />
       <Step1 />
-      <Step2 />
+      {/* <Step2 />
       <Step3 />
       <Step4 />
       <Step5 />
       <Step6 />
       <Step7 />
-      <Step8 />
+      <Step8 /> */}
       <Footer />
     </div>
   );
