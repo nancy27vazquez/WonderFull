@@ -1,10 +1,18 @@
-import React, { useState } from "react";
-// import CardHorizontal from "../../components/common/CardHorizontal";
-// import { getPlaces } from "../../services/places";
-// import { AppContext } from "../../AppContext";
-// import { useHistory } from "react-router-dom";
+import React, { useContext } from "react";
+import { AppContext } from "../../AppContext";
+import { logout } from "../../services/auth";
+import { useHistory } from "react-router-dom";
 
 const Menu = () => {
+  const { user, resetContext } = useContext(AppContext);
+  const { push } = useHistory();
+
+  const handleLogout = () => {
+    logout();
+    push("/login");
+    resetContext();
+  };
+
   // const { user, properties, setPlaces } = useContext(AppContext);
   // const { push } = useHistory();
 
@@ -26,39 +34,49 @@ const Menu = () => {
             WonderFull
           </a>
         </div>
-
-        <div className="uk-navbar-right">
-          <ul className="uk-navbar-nav">
-            <li>
-              <a href="/discover">Discover</a>
-            </li>
-            <li>
-              <a href="/recommend">Recommend</a>
-            </li>
-            <li>
-              <a href="/favorites">Favorites</a>
-            </li>
-            <li>
-              <a href="/next-trip">Next trip</a>
-            </li>
-            <li>
-              <a href="/profile">
+        {user._id ? (
+          <div className="uk-navbar-right">
+            <ul className="uk-navbar-nav">
+              <li>
+                <a href="/discover">Discover</a>
+              </li>
+              <li>
+                <a href="/recommend">Recommend</a>
+              </li>
+              <li>
+                <a href="/favorites">Favorites</a>
+              </li>
+              <li>
+                <a href="/next-trip">Next trip</a>
+              </li>
+              <li>
                 <img
                   src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576279914/WonderFull/user_kzixa6.svg"
                   width="20"
                 />
-              </a>
-            </li>
-            <li>
-              <a href="/login">
-                <img
-                  src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576278992/WonderFull/logout_mnfi4h.svg"
-                  width="20"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+              </li>
+              <li>
+                <button onClick={handleLogout}>
+                  <img
+                    src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576278992/WonderFull/logout_mnfi4h.svg"
+                    width="20"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <div className="uk-navbar-right">
+            <ul className="uk-navbar-nav">
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/signup">Signup</a>
+              </li>
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
   );

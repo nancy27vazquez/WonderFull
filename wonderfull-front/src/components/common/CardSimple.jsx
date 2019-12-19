@@ -1,37 +1,34 @@
 import React from "react";
 import Rate from "../common/Rate";
 
-const CardSimple = () => {
+const CardSimple = ({
+  wonderName,
+  images = [],
+  description,
+  rate,
+  whoRecommends,
+  category,
+  daytime
+}) => {
   return (
     <div>
       <div className="uk-card uk-card-default uk-margin-small-bottom uk-border-rounded">
         <div className="uk-card-media-top">
-          <span className="uk-margin-small-right" uk-icon="check"></span>
-          <span className="uk-margin-small-right" uk-icon="heart"></span>
+          <div className="uk-badge">
+            <span className="uk-margin-small-right" uk-icon="check"></span>
+            <span className="uk-margin-small-right" uk-icon="heart"></span>
+          </div>
           <div
             className="uk-position-relative uk-visible-toggle uk-light"
             tabIndex="-1"
             uk-slideshow="true"
           >
             <ul className="uk-slideshow-items">
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                  alt=""
-                />
-              </li>
+              {images.map((image, index) => (
+                <li key={index}>
+                  <img src={image} alt="" uk-cover="true" />
+                </li>
+              ))}
             </ul>
 
             <a
@@ -47,23 +44,20 @@ const CardSimple = () => {
               uk-slideshow-item="next"
             ></a>
           </div>
-          <div className="uk-card-badge uk-label">Mountain</div>
+          <div className="uk-card-badge uk-label">{category}</div>
         </div>
         <div className="uk-card-body uk-padding-medium uk-text-left">
           <div>
-            <h3 className="uk-card-title">Yosemite National Park</h3>
+            <h3 className="uk-card-title">{wonderName}</h3>
             <span className="uk-margin-small-right" uk-icon="check"></span>
           </div>
           <h3>California, United States</h3>
           <Rate />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt.
-          </p>
+          <p>{description}</p>
         </div>
         <div className="uk-card-footer">
           <a href="#" className="uk-button uk-button-text">
-            Recommended by <span>Tamara Davis</span>
+            Recommended by <span>{whoRecommends}</span>
           </a>
         </div>
       </div>
