@@ -1,16 +1,18 @@
 import React from "react";
 import RecommendForm from "../recommend/RecommendForm";
 import ChosenPlaces from "../nextTrip/ChosenPlaces";
+import Rate from "../common/Rate";
 
 const TripInfo = () => {
   return (
     <div>
       <div
-        class="uk-background-blend-multiply uk-background-secondary uk-height-medium new-trip-back uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-        data-src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576756869/WonderFull/images_4_s3yy17.jpg"
+        class="uk-background-secondary uk-height-medium new-trip-back uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        data-src="https://res.cloudinary.com/dr95kad7s/image/upload/v1576761578/WonderFull/adventure-alps-climb-clouds-267104_vtitko.jpg"
         uk-img
       >
-        <h1>Background Image</h1>
+        <h1>Yosemite National Park</h1>
+        <Rate />
       </div>
 
       <div className="uk-margin-large-top">
